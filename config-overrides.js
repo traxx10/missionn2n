@@ -6,8 +6,9 @@ module.exports = function override(config, env) {
     config = rewireCssModules(config, env);
     config = injectBabelPlugin(['import', { libraryName: 'antd', style: true }], config);  // change importing css to less
     config = rewireLess.withLoaderOptions({
+        javascriptEnabled: true,
         modifyVars: { 
-                        "@primary-color": "#F15A24",
+                        "@primary-color": "#2DBCBC",
                     },
     })(config, env);
         return config;
