@@ -43,3 +43,44 @@
         }
         
 }
+
+@media screen and (max-width: 1100px) {
+    .Menu {
+        flex-direction: column;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        .MenuItem {
+            padding: 0 !important; 
+
+            .NavLink {
+                color: #fff;
+                padding: 0;
+            }
+
+            .ActiveLink {
+                color:#2DBCBC !important;
+            }
+        }
+
+        .SubMenu {
+            padding: 0;
+
+            &:active, &:hover {
+                border-bottom: none !important;
+            }
+            
+
+            .Title {
+                padding: 0;
+            }
+
+            .subMenuNavLink {
+                font-size: 1.3rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    
+}
