@@ -7,6 +7,10 @@ import Async from './Hoc/AsyncComponent';
 
 const { Footer, Content } = Layout;
 
+const Home = Async(() => {
+  return import('./containers/Home/Home');
+});
+
 class App extends Component {
   render() {
     return (
@@ -14,6 +18,9 @@ class App extends Component {
           <Layout>
               <Content>
                 <TopHeader />
+                <Switch>
+                  <Route path="/" exact component={Home} />
+                </Switch>
               </Content>
           </Layout>
         </StyleRoot>

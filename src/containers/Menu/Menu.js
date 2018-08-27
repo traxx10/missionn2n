@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Menu, Row, Col } from 'antd';
 import Radium from 'radium';
 import { NavLink, withRouter } from 'react-router-dom';
+import { useShallowEqual } from 'shouldcomponentupdate-children';
 import styles from './Menu.module.scss';
 
 const MenuItem = Menu.Item;
@@ -87,4 +88,4 @@ const subMenu = {
     },
 }
 
-export default withRouter(Radium(Menus));
+export default withRouter(useShallowEqual(Radium(Menus)));

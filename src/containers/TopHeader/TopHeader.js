@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Layout, Row, Col, Drawer } from 'antd';
-import { CSSTransition } from 'react-transition-group';
+import { useShallowEqual } from 'shouldcomponentupdate-children';
 import Menu from '../Menu/Menu';
 import Image from 'react-image';
 import n2nLogo from '../../assets/logo/n2n.svg';
@@ -71,4 +71,4 @@ const HeaderStyle = {
     }
 }
 
-export default TopHeader;
+export default useShallowEqual(TopHeader);
