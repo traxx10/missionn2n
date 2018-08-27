@@ -50,9 +50,9 @@ class Menus extends Component {
                                     </NavLink>
                                 </MenuItem>
                                 <MenuItem key="/generation-next-discipleship-mission">
-                                    <NavLink className={styles.subMenuNavLink} style={subMenu.navLink} activeStyle={subMenu.activeStyle} to="/generation-next-discipleship-mission">
+                                    <a target="_blank" href="http://gennextmission.com/" className={styles.subMenuNavLink} style={subMenu.navLink} activeStyle={subMenu.activeStyle} to="/generation-next-discipleship-mission">
                                         GENERATION NEXT DISCIPLESHIP MISSION 
-                                    </NavLink>
+                                    </a>
                                 </MenuItem>
                                 <MenuItem key="/n2n-prayer-partners">
                                     <NavLink className={styles.subMenuNavLink} style={subMenu.navLink} activeStyle={subMenu.activeStyle} to="/n2n-prayer-partners">

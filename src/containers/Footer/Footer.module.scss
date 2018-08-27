@@ -1,0 +1,136 @@
+.Footer {
+    background-color: #383838;
+    padding: 4rem 0 0 0;
+    margin: 0;
+    text-align: center;
+
+    .QuickLinks {
+        margin-bottom: 5rem;
+
+        h3 {
+            display: inline-block;
+            font-size: 2.3rem;
+            line-height: 2.3rem;
+            color: #fff;
+            font-weight: 300;
+            text-transform: uppercase;
+            border-bottom: 1px solid #2DBCBC;
+            padding: 0 0 12px 2px;
+            margin: 0 0 21px;
+        }
+
+        .Link {
+            display: block;
+            text-decoration: none;
+            color: #8d8d8d;
+            font-size: 1.7rem;
+            margin-bottom: .8rem;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    .Locations {
+        margin-bottom: 5rem;
+
+        h3 {
+            display: inline-block;
+            font-size: 2.3rem;
+            line-height: 2.3rem;
+            color: #fff;
+            font-weight: 300;
+            text-transform: uppercase;
+            border-bottom: 1px solid #2DBCBC;
+            padding: 0 0 12px 2px;
+            margin: 0 0 21px;
+        }
+
+
+        h5 {
+            font-size: 1.5rem;
+            color: #8d8d8d;
+            margin-bottom: 2rem;
+            padding: 0 4rem;
+        }
+
+        h4 {
+            font-size: 1.7rem;
+            color: #fff;
+        }
+    }
+
+    .Connect {
+        margin-bottom: 5rem;
+
+        h3 {
+            display: inline-block;
+            font-size: 2.3rem;
+            line-height: 2.3rem;
+            color: #fff;
+            font-weight: 300;
+            text-transform: uppercase;
+            border-bottom: 1px solid #2DBCBC;
+            padding: 0 0 12px 2px;
+            margin: 0 0 21px;
+        }
+
+        .ConnectIcons {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+            .Avatar {    
+                height: 4.7rem;
+                width: 4.7rem;
+                border-radius: 4.7rem;
+                background: #b2b2b2;
+                margin: 1rem;
+
+                &:hover, 
+                &:active {
+                    background: #2DBCBC;
+                }
+    
+                .Image {
+                    height: 100%;
+                    width: auto;
+                    padding: 1rem;
+                }
+            }    
+        }
+    }
+
+    .FooterBottom {
+        background: #212121;
+
+        a {
+            text-decoration: none;
+        }
+
+        .Trinac {
+            &:hover {
+                color: #2DBCBC;
+            }
+        }
+
+        h3 {
+            padding: 0.5rem 2rem;
+            font-size: 1.3rem;
+            color: #c7c7c7;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .Footer {
+        .FooterBottom {
+            h3 {
+                text-align: center !important;
+            }
+        }
+    }
+}
