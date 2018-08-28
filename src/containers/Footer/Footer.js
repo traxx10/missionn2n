@@ -41,8 +41,8 @@ class Footers extends Component {
                             <br />
                             <h4> ABUJA </h4>
                             <h5> 
-                                Pechez International Hotels
-                                #1 Ajesa Street, Wuse 2
+                                10 Lingu crescent, off Aminu Kano Crescent,
+                                Wuse 11
                             </h5>
 
                             <h4> AWKA </h4>
