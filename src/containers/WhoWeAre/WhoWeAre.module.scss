@@ -1,0 +1,64 @@
+.WhoWeAre {
+    text-align: center;
+
+    .Banner {
+        width: 100%;
+        
+        .Image {
+            width: 100%;
+            height: auto;
+            max-height: 75vh;
+        }
+    }
+
+    .Body {
+        padding: 2rem 2rem 5rem 2rem;
+
+        .Header {
+            font-size: 2.8rem;
+            font-weight: 100;
+            padding: 2rem 2rem 5rem 2rem;
+            margin-bottom: 2rem;
+         }
+
+        .Row {
+            margin-bottom: 5rem;
+
+            h3 {
+                font-size: 2.2rem;
+                font-weight: 400;
+                text-align: center;
+                padding: 0 2rem;
+            }
+
+            .titleLine {
+                width: 20rem;
+                height: 1px;
+                background: rgba(184,184,184,0.25);
+                margin: 1.8rem auto 3.8rem;
+                clear: both;
+                position: relative;
+    
+                hr {
+                    width: 9.9rem;
+                    height: .7rem;
+                    background: #2DBCBC;
+                    border: 0;
+                    outline: none;
+                    margin: 0 auto;
+                    position: absolute;
+                    left: 50%;
+                    top: -3px;
+                    margin-left: -4.9rem;
+                }
+            }
+
+            p {
+                font-size: 2.2rem;
+                font-weight: 100;
+                padding: 0 2rem;
+                text-align: left;
+            }
+        }
+    }
+}

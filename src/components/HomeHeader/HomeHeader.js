@@ -17,7 +17,7 @@ class HomeHeader extends Component {
                                     <h3> <i> Your tagline </i> </h3>
                                 </div>
                                 <Button className={styles.Button}>
-                                    <Link to="/who-we-are" className={styles.Link}> READ MORE </Link>
+                                    <a href="/who-we-are" className={styles.Link}> READ MORE </a>
                                 </Button>
                             </div>
                         </div>
@@ -28,7 +28,7 @@ class HomeHeader extends Component {
                                     <h3> <i> August 29-31 </i> </h3>
                                 </div>
                                 <Button className={styles.Button}>
-                                    <Link to="/events" className={styles.Link}> MORE EVENTS </Link>
+                                    <a href="/events" className={styles.Link}> MORE EVENTS </a>
                                 </Button>
                             </div>
                         </div>

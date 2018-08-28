@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { useShallowEqual } from 'shouldcomponentupdate-children';
 import { Row, Col, Button } from 'antd';
 import styles from './HomeWhoWeAre.module.scss';
@@ -24,7 +23,7 @@ class HomeWhoWeAre extends Component {
                                 To Glorify God means to serve and worship him.
                             </p>
                             <Button className={styles.Button}>
-                                <Link to="/what-we-do" className={styles.Link}> READ MORE </Link>
+                                <a href="/who-we-are" className={styles.Link}> READ MORE </a>
                             </Button>
                         </div>
                     </div>
