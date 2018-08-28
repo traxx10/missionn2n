@@ -1,0 +1,113 @@
+.HomeWhoWeAre {
+    text-align: center;
+    padding: 4.4rem 1.5rem 9.5rem;
+
+    .Header {
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 4rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            color: #303030;
+            text-align: center;
+        }
+
+        .titleLine {
+            width: 25.6rem;
+            height: 1px;
+            background: rgba(184,184,184,0.25);
+            margin: 1.8rem auto 3.8rem;
+            clear: both;
+            position: relative;
+
+            hr {
+                width: 9.9rem;
+                height: .7rem;
+                background: #2DBCBC;
+                border: 0;
+                outline: none;
+                margin: 0 auto;
+                position: absolute;
+                left: 50%;
+                top: -3px;
+                margin-left: -4.9rem;
+            }
+        }
+    }
+
+    .Body {
+        
+        p {
+            font-size: 2.2rem;
+            line-height: 2.7rem;
+            margin: 0 20rem;
+            font-weight: 100;
+            text-align: left;
+            margin-bottom: 5rem;
+        }
+
+        .Button {
+            height: 4rem;
+
+            .Link {
+                text-align: center;
+                font-size: 2rem;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+    .HomeWhoWeAre {
+        .Body {
+            
+            p {
+                font-size: 2rem;
+                margin: 0 8rem;
+                margin-bottom: 5rem;
+            }
+
+            .Button {
+    
+                .Link {
+                    text-align: center;
+                    font-size: 1.8rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .HomeWhoWeAre {
+        .Header {
+            h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        .Body {
+
+            p {
+                font-size: 1.8rem;
+                margin: 0;
+                text-align: left;
+                margin-bottom: 5rem;
+            }
+
+            .Button {
+                height: 4rem;
+    
+                .Link {
+                    text-align: center;
+                    font-size: 1.6rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}

@@ -40,28 +40,33 @@ class Menus extends Component {
                         <SubMenu style={{ padding: 0 }} key="/what-we-do" title={<span className={styles.Title}> WHAT WE DO </span>} className={styles.SubMenu}>
                             <MenuItemGroup>
                                 <MenuItem key="/n2n-missions">
-                                    <NavLink className={styles.subMenuNavLink} style={subMenu.navLink} activeStyle={subMenu.activeStyle} to="/n2n-missions">
+                                    <NavLink className={styles.subMenuNavLink} style={subMenu.navLink} activestyle={subMenu.activestyle} to="/n2n-missions">
                                         N2N MISSIONS 
                                     </NavLink>
                                 </MenuItem>
                                 <MenuItem key="/church-ministry">
-                                    <NavLink className={styles.subMenuNavLink} style={subMenu.navLink} activeStyle={subMenu.activeStyle} to="/church-ministry">
+                                    <NavLink className={styles.subMenuNavLink} style={subMenu.navLink} activestyle={subMenu.activestyle} to="/church-ministry">
                                         CHURCH MINISTRY 
                                     </NavLink>
                                 </MenuItem>
                                 <MenuItem key="/generation-next-discipleship-mission">
-                                    <a target="_blank" href="http://gennextmission.com/" className={styles.subMenuNavLink} style={subMenu.navLink} activeStyle={subMenu.activeStyle} to="/generation-next-discipleship-mission">
+                                    <a target="_blank" href="http://gennextmission.com/" className={styles.subMenuNavLink} style={subMenu.navLink} activestyle={subMenu.activestyle} to="/generation-next-discipleship-mission">
                                         GENERATION NEXT DISCIPLESHIP MISSION 
                                     </a>
                                 </MenuItem>
                                 <MenuItem key="/n2n-prayer-partners">
-                                    <NavLink className={styles.subMenuNavLink} style={subMenu.navLink} activeStyle={subMenu.activeStyle} to="/n2n-prayer-partners">
+                                    <NavLink className={styles.subMenuNavLink} style={subMenu.navLink} activestyle={subMenu.activestyle} to="/n2n-prayer-partners">
                                         N2N PRAYER PARTNERS
                                     </NavLink>
                                 </MenuItem>
                                 <MenuItem key="/every-child-count">
-                                    <NavLink className={styles.subMenuNavLink} style={subMenu.navLink} activeStyle={subMenu.activeStyle} to="/every-child-count">
+                                    <NavLink className={styles.subMenuNavLink} style={subMenu.navLink} activestyle={subMenu.activestyle} to="/every-child-count">
                                         EVERY CHILD COUNT
+                                    </NavLink>
+                                </MenuItem>
+                                <MenuItem key="/church-planting">
+                                    <NavLink className={styles.subMenuNavLink} style={subMenu.navLink} activestyle={subMenu.activestyle} to="/church-planting">
+                                        CHURCH PLANTING
                                     </NavLink>
                                 </MenuItem>
                             </MenuItemGroup>
@@ -79,7 +84,7 @@ class Menus extends Component {
 }
 
 const subMenu = {
-    activeStyle: {
+    activestyle: {
         color: '#2DBCBC',
     },
 

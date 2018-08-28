@@ -39,6 +39,10 @@ const EveryChildCount = Async(() => {
   return import('./containers/WhatWeDo/EveryChildCount/EveryChildCount');
 });
 
+const ChurchPlanting = Async(() => {
+  return import('./containers/WhatWeDo/ChurchPlanting/ChurchPlanting');
+});
+
 class App extends Component {
   render() {
     return (
@@ -55,6 +59,7 @@ class App extends Component {
                   <Route path="/church-ministry" exact component={ChurchMinistry} />
                   <Route path="/n2n-prayer-partners" exact component={N2nPrayer} />
                   <Route path="/every-child-count" exact component={EveryChildCount} />
+                  <Route path="/church-planting" exact component={ChurchPlanting} />
                 </Switch>
                 <Footer />
               </Content>

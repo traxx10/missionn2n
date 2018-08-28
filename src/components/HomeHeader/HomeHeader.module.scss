@@ -118,6 +118,13 @@
             height: 85vh;
 
             .Text {
+                .TextContainer {
+
+                    h1, h3 {
+                        margin: 0 2rem;
+                    }
+                }
+
                 .Button {
                     padding: 0 4rem;
 
@@ -132,6 +139,13 @@
             height: 85vh;
 
             .Text {
+                .TextContainer {
+                    
+                    h1, h3 {
+                        margin: 0 2rem;
+                    }
+                }
+                
                 .Button {
                     padding: 0 4rem;
 
