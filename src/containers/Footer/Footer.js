@@ -76,7 +76,7 @@ class Footers extends Component {
                                         <Image className={styles.Image} alt="n2ngoogle" src={[ Google ]} />
                                     </div>
                                 </a>
-                                <a href="#">
+                                <a target="_blank" href="https://www.instagram.com/Generation_next_mission/">
                                     <div className={styles.Avatar}>
                                         <Image className={styles.Image} alt="n2ninstagram" src={[ Instagram ]} />
                                     </div>
