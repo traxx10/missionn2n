@@ -11,7 +11,7 @@ class GetInvolved extends Component {
     componentDidMount() {
         setTimeout(() => {
             this.setState({ loading: false })
-        }, 3000)
+        }, 2000)
     }
 
     renderComponent = () => {

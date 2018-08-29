@@ -1,0 +1,9 @@
+.Enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.EnterActive {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+}
