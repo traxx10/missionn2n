@@ -1,0 +1,163 @@
+.Loading {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; 
+}
+
+.ContactUs {
+    .ImageContainer {
+        height: 65vh;  
+        position: relative;
+        margin-bottom: 3rem;
+        
+        .Text {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background-image: -moz-linear-gradient(to right bottom,
+                rgba(#2DBCBC, 0.1),
+                rgba(#008686, 0.1)),
+                url('../../assets/contact-us.jpg');
+            background-image: -webkit-linear-gradient(to right bottom,
+                    rgba(#2DBCBC, 0.1),
+                    rgba(#008686, 0.1)),
+                    url('../../assets/contact-us.jpg');
+            background-image: -o-linear-gradient(to right bottom,
+                    rgba(#2DBCBC, 0.1),
+                    rgba(#008686, 0.1)),
+                    url('../../assets/contact-us.jpg');
+            background-image: linear-gradient(
+                to right bottom,
+                rgba(#2DBCBC, 0.1),
+                rgba(#008686, 0.1)),
+                url('../../assets/contact-us.jpg');
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            background-repeat: no-repeat;
+
+            .Header {
+
+                h1 {
+                    font-size: 3.5rem;
+                    line-height: 4rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: #fff;
+                    text-align: center;
+                }
+        
+                .titleLine {
+                    width: 25.6rem;
+                    height: 1px;
+                    background: #383838;
+                    margin: 1.8rem auto 3.8rem;
+                    clear: both;
+                    position: relative;
+        
+                    hr {
+                        width: 9.9rem;
+                        height: .7rem;
+                        background: #2DBCBC;
+                        border: 0;
+                        outline: none;
+                        margin: 0 auto;
+                        position: absolute;
+                        left: 50%;
+                        top: -3px;
+                        margin-left: -4.9rem;
+                    }
+                }
+            }
+
+            .TextContainer {
+                margin-bottom: 3rem;
+
+                h3, h2, h1 {
+                    color: #fff;
+                    font-weight: 300;
+                    margin: 0 1.8rem;
+                }
+
+                h1 {
+                    font-size: 10rem;
+                    letter-spacing: .8rem;
+                }
+
+                h3 {
+                    font-size: 2rem;
+                    letter-spacing: 1rem;
+                }
+            }
+        }
+    }
+
+    .Content {
+        margin: 7rem 1rem;
+
+        .Header {
+            margin-bottom: 2rem;
+    
+            h1 {
+                font-size: 4rem;
+                line-height: 4rem;
+                text-transform: uppercase;
+                font-weight: 100;
+                color: #303030;
+                text-align: center;
+            }
+    
+            .titleLine {
+                width: 25.6rem;
+                height: 1px;
+                background: #383838;
+                margin: 1.8rem auto 3.8rem;
+                clear: both;
+                position: relative;
+    
+                hr {
+                    width: 9.9rem;
+                    height: .7rem;
+                    background: #2DBCBC;
+                    border: 0;
+                    outline: none;
+                    margin: 0 auto;
+                    position: absolute;
+                    left: 50%;
+                    top: -3px;
+                    margin-left: -4.9rem;
+                }
+            }
+        }
+    
+        .Body {
+            text-align: center;
+    
+            h2 {
+                text-align: center;
+                font-weight: 400;
+                letter-spacing: .5rem;
+            }
+    
+            p {
+                margin: 0 0 1.5rem 0;
+                text-align: inherit;
+    
+                a {
+                    color: #2DBCBC;
+                    outline: none;
+                    text-decoration: none;
+                    text-align: inherit;
+                }
+            }
+        }
+
+    }
+}
