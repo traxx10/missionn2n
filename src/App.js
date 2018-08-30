@@ -4,11 +4,24 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 import { StyleRoot } from 'radium';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import TopHeader from './containers/TopHeader/TopHeader';
+import firebase from 'firebase';
 import Footer from './containers/Footer/Footer';
 import Async from './Hoc/AsyncComponent';
 import styles from './App.module.scss';
 
 const { Content } = Layout;
+
+var config = {
+  apiKey: "AIzaSyCyIms3kHCZZVVSYESU4o-wd3AQ9kHMFb8",
+  authDomain: "missionn2n.firebaseapp.com",
+  databaseURL: "https://missionn2n.firebaseio.com",
+  projectId: "missionn2n",
+  storageBucket: "missionn2n.appspot.com",
+  messagingSenderId: "968888295857"
+};
+
+firebase.initializeApp(config);
+
 
 const Home = Async(() => {
   return import('./containers/Home/Home');
