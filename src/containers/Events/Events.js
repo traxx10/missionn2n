@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Icon, Card } from 'antd';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { useShallowEqual } from 'shouldcomponentupdate-children';
 import { fetchEvents } from '../../actions';
@@ -13,14 +13,8 @@ import _ from 'lodash';
 import styles from './Events.module.scss';
 
 class Events extends Component {
-    state = {
-        loading: true,
-    }
 
     componentDidMount() {
-        setTimeout(() => {
-            this.setState({ loading: false });
-        }, 2000)
         this.props.fetchEvents();
     }
 
@@ -47,7 +41,18 @@ class Events extends Component {
                         sm={{ span: 24 }}
                         xs={{ span: 24 }}>
                         <Card bordered={false} bodyStyle={bodyStyle.cardStyle} className={styles.Card}>
-                            <Img src={event.header_image_url} className={styles.Img} />
+                            <Img 
+                                loader={ <Icon style={{ 
+                                    color: '#2DBCBC', 
+                                    fontSize: '2rem',
+                                    display: 'flex',
+                                    marginBottom: '1.5rem',
+                                    width: '100%',
+                                    justifyContent: 'center',
+                                    alignItems: 'center'
+                                     }} type="loading" /> } 
+                                src={event.header_image_url} 
+                                className={styles.Img} />
                             <div className={styles.Header}>
                                 <Row gutter={24}>
                                     <Col span={8}>
@@ -62,7 +67,11 @@ class Events extends Component {
                             <div className={styles.CardBody}>
                                 <h1> {event.title} </h1>
                                 <h3> {event.tag_line} </h3>
-                                <p> {shorten(event.details, 35)} </p>
+                                <p style={{ marginBottom: '1rem'}} > {shorten(event.details, 120)} </p>
+                                <Link to={{
+                                    pathname: `/events/${event.uid}`,
+                                    state: { eventDetail: event }
+                                }} > View Details </Link>
                             </div>
                         </Card>
                     </Col>
@@ -76,21 +85,6 @@ class Events extends Component {
             )
         }
     }
-
-    // renderComponent = () => {
-    //     if(this.state.loading) {
-    //         return (
-    //             <div className={styles.Loading}>
-    //                 <Icon style={{ color: '#2DBCBC', fontSize: '5rem' }} type="loading" />
-    //             </div>
-    //         )
-
-    //     } else  if(this.state.loading === false) {
-    //         return (
-                
-    //         )
-    //     }
-    // }
 
     render() {
         return (
