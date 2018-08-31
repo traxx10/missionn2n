@@ -1,31 +1,41 @@
 import React, { Component } from 'react';
-import { Row, Col, Icon } from 'antd';
+import { Row, Col } from 'antd';
 import { useShallowEqual } from 'shouldcomponentupdate-children';
+import Footer from '../Footer/Footer';
 import styles from './ContactUs.module.scss';
 
 class ContactUs extends Component {
-    state = {
-        loading: true,
-    }
+    // state = {
+    //     loading: true,
+    // }
 
-    componentDidMount() {
-        setTimeout(() => {
-            this.setState({ loading: false })
-        }, 2000)
-    }
+    // componentDidMount() {
+    //     setTimeout(() => {
+    //         this.setState({ loading: false })
+    //     }, 2000)
+    // }
 
-    renderComponent = () => {
-        if(this.state.loading) {
-            return (
-                <div className={styles.Loading}>
-                    <Icon style={{ color: '#2DBCBC', fontSize: '5rem' }} type="loading" />
-                </div>
-            )
-        } else if(this.state.loading === false) {
-            return (
+    // renderComponent = () => {
+    //     if(this.state.loading) {
+    //         return (
+    //             <div className={styles.Loading}>
+    //                 <Icon style={{ color: '#2DBCBC', fontSize: '5rem' }} type="loading" />
+    //             </div>
+    //         )
+    //     } else if(this.state.loading === false) {
+    //         return (
+                
+    //         )
+    //     }
+    // }
+
+
+    render() {
+        return (
+            <div>
                 <Row style={{ background: '#fff' }}>
                     <Col span={24}>
-                       <div className={styles.ContactUs}>
+                        <div className={styles.ContactUs}>
                             <div className={styles.ImageContainer}>
                                 <div className={styles.Text}>
                                     <div className={styles.Header}>
@@ -61,14 +71,8 @@ class ContactUs extends Component {
                         </div>
                     </Col>
                 </Row>
-            )
-        }
-    }
-
-
-    render() {
-        return (
-            this.renderComponent()
+                <Footer />
+            </div>
         )
     }
 }

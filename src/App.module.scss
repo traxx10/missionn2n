@@ -1,9 +1,17 @@
 .Enter {
-    opacity: 0;
-    z-index: 1;
+    opacity: 0.01;
 }
 
 .EnterActive {
     opacity: 1;
-    transition: opacity 250ms ease-in;
+    transition: all 300ms ease-in;
+}
+
+.Exit {
+    opacity: 1;
+}
+
+.ExitActive {
+    opacity: 0.01;
+    transition: all 300ms ease-in
 }

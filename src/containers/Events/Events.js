@@ -7,6 +7,7 @@ import { fetchEvents } from '../../actions';
 import { BarLoader } from 'react-css-loaders';
 import Img from 'react-image';
 import CalenderIcon from '../../assets/icons/calender.svg';
+import Footer from '../Footer/Footer';
 import _ from 'lodash';
 
 import styles from './Events.module.scss';
@@ -76,16 +77,24 @@ class Events extends Component {
         }
     }
 
-    renderComponent = () => {
-        if(this.state.loading) {
-            return (
-                <div className={styles.Loading}>
-                    <Icon style={{ color: '#2DBCBC', fontSize: '5rem' }} type="loading" />
-                </div>
-            )
+    // renderComponent = () => {
+    //     if(this.state.loading) {
+    //         return (
+    //             <div className={styles.Loading}>
+    //                 <Icon style={{ color: '#2DBCBC', fontSize: '5rem' }} type="loading" />
+    //             </div>
+    //         )
 
-        } else  if(this.state.loading === false) {
-            return (
+    //     } else  if(this.state.loading === false) {
+    //         return (
+                
+    //         )
+    //     }
+    // }
+
+    render() {
+        return (
+            <div>
                 <Row>
                     <Col span={24}>
                         <div className={styles.Events}>
@@ -107,13 +116,8 @@ class Events extends Component {
                         </div>
                     </Col>
                 </Row>
-            )
-        }
-    }
-
-    render() {
-        return (
-            this.renderComponent()
+                <Footer />
+            </div>
         )
     }
 }

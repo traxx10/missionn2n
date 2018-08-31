@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { Layout } from 'antd';
 import { Route, Switch, withRouter } from 'react-router-dom';
-import { StyleRoot } from 'radium';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import TopHeader from './containers/TopHeader/TopHeader';
 import firebase from 'firebase';
-import Footer from './containers/Footer/Footer';
 import Async from './Hoc/AsyncComponent';
 import styles from './App.module.scss';
 
@@ -67,17 +65,18 @@ const ContactUs = Async(() => {
 class App extends Component {
   render() {
     return (
-        <StyleRoot>
           <Layout>
               <Content>
                 <TopHeader />
                 <TransitionGroup>
                   <CSSTransition
                     key={this.props.location.key}
-                    timeout={300}
+                    timeout={{ exit: 300, enter: 300 }}
                     classNames={{
                       enter: styles.Enter,
                       enterActive: styles.EnterActive,
+                      exit: styles.Exit,
+                      exitActive: styles.ExitActive
                     }}
                   >
                     <Switch location={this.props.location} >
@@ -95,9 +94,7 @@ class App extends Component {
                   </CSSTransition>
                 </TransitionGroup>
               </Content>
-              <Footer />
           </Layout>
-        </StyleRoot>
     )
   }
 }
