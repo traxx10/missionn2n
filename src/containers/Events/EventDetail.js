@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { Row, Col, Card, Icon } from 'antd';
+import { connect } from 'react-redux';
+import { Row, Col, Card, Icon, Modal, Button } from 'antd';
 import { useShallowEqual } from 'shouldcomponentupdate-children';
+import { toggleModal, keepUpdate } from '../../actions';
+import EventDetailForm from '../../components/EventDetailForm/EventDetailForm';
 import Img from 'react-image';
 import styles from './EventDetail.module.scss';
 
@@ -52,7 +55,7 @@ class EventDetail extends Component {
                                         <h2 style={{ color: '#2DBCBC', fontWeight: '700' }}> Contact </h2>
                                         <h2 className={styles.subtitle}> {this.props.location.state.eventDetail.contact_name} </h2>
                                         <h2 style={{ color: '#2DBCBC'}} className={styles.subtitle}> <i> {this.props.location.state.eventDetail.contact_email} </i> </h2>
-                                        <h2 className={styles.subtitle}> {this.props.location.state.eventDetail.contact_number} </h2>
+                                        <h2 style={{ marginBottom: '1rem' }} className={styles.subtitle}> {this.props.location.state.eventDetail.contact_number} </h2>
                                     </Card>
                                 </Col>
                                 <Col 
@@ -75,15 +78,20 @@ class EventDetail extends Component {
                                                 <h1> {this.props.location.state.eventDetail.date} </h1>
                                                 <h1> {this.props.location.state.eventDetail.time} </h1>
                                             </Col>
-                                            {/* <Col
-                                            xl={{ span: 12}}
-                                            lg={{ span: 12 }}
-                                            md={{ span: 12 }}
-                                            sm={{ span: 24 }}
-                                            xs={{ span: 24 }}>
-                                                
-                                            </Col> */}
                                         </Row>
+                                        <Button onClick={() => this.props.toggleModal(this.props.modalVisible)} className={styles.Button} size="large" type="primary">
+                                           <span> Keep Me Updated </span>
+                                        </Button>
+                                        <Modal 
+                                        title="We would keep you up to date"
+                                        onOk={() => this.props.toggleModal(this.props.modalVisible)}
+                                        onCancel={() => this.props.toggleModal(this.props.modalVisible)}
+                                        visible={this.props.modalVisible}>
+                                            <EventDetailForm 
+                                            loading={this.props.loading}
+                                            keepUpdate={this.props.keepUpdate}
+                                            eventName={this.props.location.state.eventDetail.title}/>
+                                        </Modal>
                                     </div>
                                 </Col>
                             </Row>
@@ -99,4 +107,12 @@ const bodyStyle = {
         backgroundColor: 'rgba(239, 239, 239, 0.5)'
     }
 }
-export default withRouter(useShallowEqual(EventDetail));
+
+const mapStateToProps = state => {
+    return {
+        modalVisible: state.EventDetailReducer.modalVisible,
+        loading: state.EventDetailReducer.loading,
+    }
+}
+
+export default withRouter(connect(mapStateToProps, { toggleModal, keepUpdate })(useShallowEqual(EventDetail)));
