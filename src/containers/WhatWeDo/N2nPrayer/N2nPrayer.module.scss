@@ -1,0 +1,165 @@
+.N2nPrayer {
+    background-color: #fff;
+    overflow: hidden;
+
+    .ImageContainer {
+        height: 95vh;  
+        position: relative;
+        margin-bottom: 3rem;
+        
+        .Text {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background-image: -moz-linear-gradient(to right bottom,
+                rgba(#2DBCBC, 0.6),
+                rgba(#008686, 0.6)),
+                url('../../../assets/every_child_count.jpeg');
+            background-image: -webkit-linear-gradient(to right bottom,
+                    rgba(#2DBCBC, 0.6),
+                    rgba(#008686, 0.6)),
+                    url('../../../assets/every_child_count.jpeg');
+            background-image: -o-linear-gradient(to right bottom,
+                    rgba(#2DBCBC, 0.6),
+                    rgba(#008686, 0.6)),
+                    url('../../../assets/every_child_count.jpeg');
+            background-image: linear-gradient(
+                to right bottom,
+                rgba(#2DBCBC, 0.6),
+                rgba(#008686, 0.6)),
+                url('../../../assets/every_child_count.jpeg');
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            background-repeat: no-repeat;
+
+            .Header {
+
+                h1 {
+                    font-size: 3.5rem;
+                    line-height: 4rem;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    color: #fff;
+                    text-align: center;
+                }
+        
+                .titleLine {
+                    width: 25.6rem;
+                    height: 1px;
+                    background: #383838;
+                    margin: 1.8rem auto 3.8rem;
+                    clear: both;
+                    position: relative;
+        
+                    hr {
+                        width: 9.9rem;
+                        height: .7rem;
+                        background: #fff;
+                        border: 0;
+                        outline: none;
+                        margin: 0 auto;
+                        position: absolute;
+                        left: 50%;
+                        top: -3px;
+                        margin-left: -4.9rem;
+                    }
+                }
+            }
+
+            .TextContainer {
+                margin-bottom: 3rem;
+
+                h3, h2, h1 {
+                    color: #fff;
+                    font-weight: 300;
+                    margin: 0 1.8rem;
+                }
+
+                h1 {
+                    font-size: 10rem;
+                    letter-spacing: .8rem;
+                }
+
+                h3 {
+                    font-size: 2rem;
+                    letter-spacing: 1rem;
+                }
+            }
+        }
+    }
+
+    .Body {
+        margin-bottom: 3rem;
+
+        .Header {
+            h3 {
+                font-size: 2.5rem;
+                font-weight: 100;
+                text-align: center;
+                padding: 0 2rem;
+            }
+
+            .titleLine {
+                width: 20rem;
+                height: 1px;
+                background: rgba(184,184,184,0.25);
+                margin: 1.8rem auto 3.8rem;
+                clear: both;
+                position: relative;
+    
+                hr {
+                    width: 9.9rem;
+                    height: .7rem;
+                    background: #2DBCBC;
+                    border: 0;
+                    outline: none;
+                    margin: 0 auto;
+                    position: absolute;
+                    left: 50%;
+                    top: -3px;
+                    margin-left: -4.9rem;
+                }
+            }
+
+            p {
+                font-size: 2.2rem;
+                font-weight: 100;
+                padding: 0 2rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .N2nPrayer {
+        .ImageContainer {
+            .Text {
+                .TextContainer {
+                    h1 {
+                       font-size: 7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .N2nPrayer {
+        .ImageContainer {
+            .Text {
+                .TextContainer {
+                    h1 {
+                       font-size: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}

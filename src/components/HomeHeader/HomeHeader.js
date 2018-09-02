@@ -21,7 +21,7 @@ class HomeHeader extends Component {
                                 </Button>
                             </div>
                         </div>
-                        <div className={styles.ImageContainer2}>
+                        {/* <div className={styles.ImageContainer2}>
                             <div className={styles.Text}>
                                 <div className={styles.TextContainer}>
                                     <h1> LUMINARIES </h1>
@@ -31,7 +31,7 @@ class HomeHeader extends Component {
                                     <a href="/events" className={styles.Link}> MORE EVENTS </a>
                                 </Button>
                             </div>
-                        </div>
+                        </div> */}
                     </Carousel>
                 </Col>
             </Row>

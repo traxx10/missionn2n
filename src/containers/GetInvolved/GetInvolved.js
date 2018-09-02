@@ -5,29 +5,6 @@ import Footer from '../Footer/Footer';
 import styles from './GetInvolved.module.scss';
 
 class GetInvolved extends Component {
-    // state = {
-    //     loading: true,
-    // }
-
-    // componentDidMount() {
-    //     setTimeout(() => {
-    //         this.setState({ loading: false })
-    //     }, 2000)
-    // }
-
-    // renderComponent = () => {
-    //     if(this.state.loading) {
-    //         return (
-    //             <div className={styles.Loading}>
-    //                 <Icon style={{ color: '#2DBCBC', fontSize: '5rem' }} type="loading" />
-    //             </div>
-    //         )
-    //     } else if(this.state.loading === false) {
-    //         return (
-                
-    //         )
-    //     }
-    // }
 
     render() {
         return (
