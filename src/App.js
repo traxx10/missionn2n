@@ -4,6 +4,17 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import TopHeader from './containers/TopHeader/TopHeader';
 import firebase from 'firebase';
+import Home from './containers/Home/Home';
+import Events from './containers/Events/Events';
+import WhoWeAre from './containers/WhoWeAre/WhoWeAre';
+import GetInvolved from './containers/GetInvolved/GetInvolved';
+import N2nMissions from './containers/WhatWeDo/N2nMissions/N2nMissions';
+import ChurchMinistry from './containers/WhatWeDo/ChurchMinistry/ChurchMinistry';
+import N2nPrayer from './containers/WhatWeDo/N2nPrayer/N2nPrayer';
+import EveryChildCount from './containers/WhatWeDo/EveryChildCount/EveryChildCount';
+import ChurchPlanting from './containers/WhatWeDo/ChurchPlanting/ChurchPlanting';
+import ContactUs from './containers/ContactUs/ContactUs';
+import EventDetail from './containers/Events/EventDetail';
 import Async from './Hoc/AsyncComponent';
 import styles from './App.module.scss';
 
@@ -21,49 +32,49 @@ var config = {
 firebase.initializeApp(config);
 
 
-const Home = Async(() => {
-  return import('./containers/Home/Home');
-});
+// const Home = Async(() => {
+//   return import('./containers/Home/Home');
+// });
 
-const Events = Async(() => {
-  return import('./containers/Events/Events');
-});
+// const Events = Async(() => {
+//   return import('./containers/Events/Events');
+// });
 
-const WhoWeAre = Async(() => {
-  return import('./containers/WhoWeAre/WhoWeAre');
-});
+// const WhoWeAre = Async(() => {
+//   return import('./containers/WhoWeAre/WhoWeAre');
+// });
 
-const GetInvolved = Async(() => {
-  return import('./containers/GetInvolved/GetInvolved');
-});
+// const GetInvolved = Async(() => {
+//   return import('./containers/GetInvolved/GetInvolved');
+// });
 
-const N2nMissions = Async(() => {
-  return import('./containers/WhatWeDo/N2nMissions/N2nMissions');
-});
+// const N2nMissions = Async(() => {
+//   return import('./containers/WhatWeDo/N2nMissions/N2nMissions');
+// });
 
-const ChurchMinistry = Async(() => {
-  return import('./containers/WhatWeDo/ChurchMinistry/ChurchMinistry');
-});
+// const ChurchMinistry = Async(() => {
+//   return import('./containers/WhatWeDo/ChurchMinistry/ChurchMinistry');
+// });
 
-const N2nPrayer = Async(() => {
-  return import('./containers/WhatWeDo/N2nPrayer/N2nPrayer');
-});
+// const N2nPrayer = Async(() => {
+//   return import('./containers/WhatWeDo/N2nPrayer/N2nPrayer');
+// });
 
-const EveryChildCount = Async(() => {
-  return import('./containers/WhatWeDo/EveryChildCount/EveryChildCount');
-});
+// const EveryChildCount = Async(() => {
+//   return import('./containers/WhatWeDo/EveryChildCount/EveryChildCount');
+// });
 
-const ChurchPlanting = Async(() => {
-  return import('./containers/WhatWeDo/ChurchPlanting/ChurchPlanting');
-});
+// const ChurchPlanting = Async(() => {
+//   return import('./containers/WhatWeDo/ChurchPlanting/ChurchPlanting');
+// });
 
-const ContactUs = Async(() => {
-  return import('./containers/ContactUs/ContactUs');
-});
+// const ContactUs = Async(() => {
+//   return import('./containers/ContactUs/ContactUs');
+// });
 
-const EventDetail = Async(() => {
-  return import('./containers/Events/EventDetail');
-})
+// const EventDetail = Async(() => {
+//   return import('./containers/Events/EventDetail');
+// })
 
 
 class App extends Component {
