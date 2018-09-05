@@ -8,3 +8,7 @@ export const REQUEST_PRAYER = 'request_prayer';
 export const REQUEST_PRAYER_SUCCESS = 'request_prayer_success';
 export const REQUEST_PRAYER_FAILED = 'request_prayer_failed';
 export const CLEAR_PRAYER_REQUEST_FORM = 'clear_prayer_request_form';
+export const LEAD_FORM = 'lead_form';
+export const LEAD_FORM_SUCCESS = 'lead_form_success';
+export const LEAD_FORM_FAILED = 'lead_form_failed';
+export const CLEAR_LEAD_FORM = 'clear_lead_form';

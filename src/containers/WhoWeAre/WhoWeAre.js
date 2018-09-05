@@ -1,13 +1,24 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'antd';
 import { useShallowEqual } from 'shouldcomponentupdate-children';
+import { connect } from 'react-redux';
+import { leadForm, clearLeadForm } from '../../actions';
 import Image from 'react-image';
 import President from '../../assets/president.jpg';
+import Roseline from '../../assets/roseline.jpg';
+import LeadForm from '../../components/LeadForm/LeadForm';
 import Footer from '../Footer/Footer';
 import styles from './WhoWeAre.module.scss';
 
 class WhoWeAre extends Component {
-    
+    componentWillMount() {
+        this.props.clearLeadForm();
+    }
+
+    componentWillUnmount() {
+        this.props.clearLeadForm();
+    }
+
     render() {
         return (
             <div>
@@ -149,6 +160,7 @@ class WhoWeAre extends Component {
                                         makers and transformational leaders for the advancement of the kingdom of God until Jesus comes.
                                     </p>
                                 </div>
+
                                 <div className={styles.Leaders}>
                                     <h3> OUR LEADERS </h3>
                                     <div className={styles.titleLine}>
@@ -156,9 +168,99 @@ class WhoWeAre extends Component {
                                     </div>
                                     <Row>
                                         <Col span={24}>
-                                            <Image className={styles.Image} src={[ President, President ]} />
-                                            <h2 style={{ marginTop: '1rem', marginBottom: '0' }}> UCHE ONUBIYI </h2>
-                                            <h2 style={{ fontWeight: '100', margin: 'auto' }}> President </h2>
+                                            <Row>
+                                                <Col
+                                                xl={{ span: 12 }}
+                                                lg={{ span: 12 }}
+                                                md={{ span: 12 }}
+                                                sm={{ span: 24 }}
+                                                xs={{ span: 24 }}
+                                                style={{ marginBottom: '4rem' }}>
+                                                    {/* <div className={styles.ImageContainer}> */}
+                                                        <Image className={styles.Image} src={[ President, President ]} />
+                                                        <h2 style={{ marginTop: '1rem', marginBottom: '0' }}> UCHE ONUBIYI </h2>
+                                                        <h2 style={{ fontWeight: '100', margin: 'auto' }}> President </h2>
+                                                    {/* </div> */}
+                                                </Col>
+                                                <Col
+                                                xl={{ span: 12 }}
+                                                lg={{ span: 12 }}
+                                                md={{ span: 12 }}
+                                                sm={{ span: 24 }}
+                                                xs={{ span: 24 }}
+                                                style={{ marginBottom: '4rem' }}>
+                                                    {/* <div className={styles.ImageContainer}> */}
+                                                        <Image className={styles.Image} src={[ Roseline, Roseline ]} />
+                                                        <h2 style={{ marginTop: '1rem', marginBottom: '0' }}> Roseline Eigenmann </h2>
+                                                        <h2 style={{ fontWeight: '100', margin: 'auto' }}> National Coordinator Zurich, Switzerland </h2>
+                                                    {/* </div> */}
+                                                </Col>
+                                            </Row>
+                                        </Col>
+                                    </Row>
+                                </div>
+
+                                <div className={styles.Platform}>
+                                    <h3> OUR PLATFORM </h3>
+                                    <div className={styles.titleLine}>
+                                        <hr />
+                                    </div>
+                                   <Row gutter={50}>
+                                       <Col 
+                                        lg={{ span: 12 }}
+                                        xl={{ span: 12 }}
+                                        md={{ span: 12 }}
+                                        sm={{ span: 24 }}
+                                        xs={{ span: 24 }}>
+                                            <div className={styles.Lead}>
+                                                <h2> THE L. E. A. D System  </h2>
+                                                <p>
+                                                    N2N <strong> Leadership Empowerment And Development </strong>
+                                                    system is a sustainable and multiplying discipleship. 
+                                                    platform established to enable us accomplish our goal. 
+                                                    It consist of small groups located on every college, 
+                                                    every campus and every community through which we reach, 
+                                                    teach, model, and mentor with Bible truth. 
+                                                    It is an avenue for guiding people to discover their divine purpose, 
+                                                    identify their potential and pursue it with passion. We have a pool of trainings and 
+                                                    activities ranging from Bible studies, outreaches,  socials, workshops, conferences, 
+                                                    leadership and discipleship trainings, ministry and missions, health/fitness and nutrition, 
+                                                    career development to entrepreneurship and skill acquisitions. 
+                                                    Our primary purpose is to raise disciple makers and generational 
+                                                    leaders for Christ who will make eternal impact in their colleges, 
+                                                    campuses, communities and nations toward the advancement of the Kingdom of God.
+                                                </p>
+                                            </div>
+                                        </Col>
+                                        <Col 
+                                        lg={{ span: 12 }}
+                                        xl={{ span: 12 }}
+                                        md={{ span: 12 }}
+                                        sm={{ span: 24 }}
+                                        xs={{ span: 24 }}>
+                                            <div className={styles.Requirements}>
+                                                <h2> 
+                                                    Want to start a LEAD group in your community, 
+                                                    campus or college? You must meet the following requirements: 
+                                                </h2>
+                                                <ul>
+                                                    <li> You must be born again with the passion to impact lives.  </li>
+                                                    <li> You must be filled with the Holy Ghost, tongue talking and living under His influence.  </li>
+                                                    <li> You must be hungry for the word of God looking to change as you increase in knowledge. <strong> 1 Peter 2: 2 </strong> </li>
+                                                    <li> You must be a person of prayer. <strong> Colossians 4: 2 </strong>  </li>
+                                                    <li> You must be of a loyal heart, teachable and open to new ideas. </li>
+                                                    <li> You must know how to work and walk in love putting others first. </li>
+                                                    <li> You must be a visionary able to see and plan into the future and as well mobilise others to go along with you. </li>
+                                                    <li> You must understand your call as a disciple maker and leader of change .  </li>
+                                                    <li> You must have track record of leadership and soul winning.   </li>
+                                                    <li> You must be ready to attend our training programme after meeting the above requirements.  </li>
+                                                </ul>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col span={24}>
+                                            <LeadForm loading={this.props.loading} sent={this.props.sent} message={this.props.message} leadForm={this.props.leadForm}/>
                                         </Col>
                                     </Row>
                                 </div>
@@ -172,4 +274,12 @@ class WhoWeAre extends Component {
     }
 }
 
-export default useShallowEqual(WhoWeAre);
+const mapStateToProps = state => {
+    return {
+        loading: state.LeadFormReducer.loading,
+        message: state.LeadFormReducer.message,
+        sent: state.LeadFormReducer.sent,
+    }
+}
+
+export default connect(mapStateToProps, { leadForm, clearLeadForm })(useShallowEqual(WhoWeAre));

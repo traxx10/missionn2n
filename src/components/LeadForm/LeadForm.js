@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { Row, Col, Form, Button, Icon, Input } from 'antd';
 import { connect } from 'react-redux';
 import { useShallowEqual } from 'shouldcomponentupdate-children';
-import styles from './PrayerRequestForm.module.scss';
+import styles from './LeadForm.module.scss';
 
-class PrayerRequestForm extends Component {
+class LeadForm extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
           if (!err) {
             if(!this.props.sent) {
-                this.props.prayerRequest(values);
+                this.props.leadForm(values);
             }
           }
         });
@@ -31,6 +31,12 @@ class PrayerRequestForm extends Component {
             <Row>
                 <Col span={24}>
                     <div className={styles.Form}>
+                        <p> 
+                            You want to start a LEAD centre or to become a member 
+                            wherever you are in the world, please call 
+                            <strong style={{ color: '#2DBCBC'}}> +2348037025570 </strong> 
+                            or fill the form below to apply.
+                        </p>
                         <Form onSubmit={this.handleSubmit}>
                             <Form.Item label="Name">
                                 {getFieldDecorator('name', {
@@ -51,20 +57,22 @@ class PrayerRequestForm extends Component {
 
                             <Form.Item label="Mobile">
                                 {getFieldDecorator('mobile', {
-                                  rules: [{ required: true, message: 'Please Mobile Number' }],   
+                                    rules: [{ required: true, message: 'Please input number' }], 
                                 })(
                                     <Input size="large"  prefix={<Icon type="phone" style={{ color: 'rgba(0,0,0,.25)' }} />}/>
                                 )}
                             </Form.Item>
 
-                            <Form.Item label="Prayer Request">
-                                {getFieldDecorator('prayer', {
-                                 rules: [{ required: true, message: 'Please input your Prayer Request' }], 
+                            <Form.Item label="Additional Information">
+                                {getFieldDecorator('information', {
+                                    initialValue: ""
+                                //  rules: [{ required: true, message: 'Please input your Prayer Request' }], 
                                 })(
                                     <Input.TextArea 
+                                    // defaultValue=''
                                     autosize={{ minRows: 5 }}
                                     size="large"  
-                                    prefix={<Icon type="phone" style={{ color: 'rgba(0,0,0,.25)' }} />}/>
+                                    />
                                 )}
                             </Form.Item>
 
@@ -74,7 +82,7 @@ class PrayerRequestForm extends Component {
                                     htmlType="submit"
                                     style={{ marginBottom: '1rem' }}
                                 >
-                                    SUBMIT PRAYER REQUEST
+                                    I WANT TO START A LEAD CENTER
                                 </Button>
                                 {this.renderLoading()}
                             </Form.Item>
@@ -87,6 +95,6 @@ class PrayerRequestForm extends Component {
     }
 }
 
-const PrayerForm = Form.create()(PrayerRequestForm);
+const Lead = Form.create()(LeadForm);
 
-export default connect()(useShallowEqual(PrayerForm));
+export default connect()(useShallowEqual(Lead));

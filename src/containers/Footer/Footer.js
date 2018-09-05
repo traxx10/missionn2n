@@ -49,6 +49,9 @@ class Footers extends Component {
                             <h5> 
                                 Emmaus House
                             </h5>
+
+                            <h4> SWITZERLAND </h4>
+                            <h5> Zurich </h5>
                         </div>
                     </Col>
                     <Col 

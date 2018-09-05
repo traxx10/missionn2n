@@ -1,5 +1,6 @@
 .WhoWeAre {
     text-align: center;
+    overflow: hidden;
 
     .ImageContainer {
         height: 95vh;  
@@ -145,6 +146,7 @@
         }
 
         .Goal {
+            margin-bottom: 3.5rem;
             h3 {
                 font-size: 2.5rem;
                 font-weight: 100;
@@ -183,6 +185,7 @@
         }
 
         .Vision {
+            margin-bottom: 3.5rem;
             h3 {
                 font-size: 2.5rem;
                 font-weight: 100;
@@ -220,8 +223,66 @@
             }
         }
 
+        .Platform {
+            margin-bottom: 3.5rem;
+
+            h3 {
+                font-size: 2.5rem;
+                font-weight: 100;
+                text-align: center;
+                padding: 0 2rem;
+            }
+
+            .titleLine {
+                width: 20rem;
+                height: 1px;
+                background: rgba(184,184,184,0.25);
+                margin: 1.8rem auto 3.8rem;
+                clear: both;
+                position: relative;
+    
+                hr {
+                    width: 9.9rem;
+                    height: .7rem;
+                    background: #2DBCBC;
+                    border: 0;
+                    outline: none;
+                    margin: 0 auto;
+                    position: absolute;
+                    left: 50%;
+                    top: -3px;
+                    margin-left: -4.9rem;
+                }
+            }
+
+            p {
+                font-size: 2rem;
+                font-weight: 100;
+                padding: 0 2rem;
+                text-align: left;
+            }
+
+            ul, li {
+                font-size: 2rem;
+                font-weight: 100;
+                padding: 0 2rem;
+                text-align: left;
+                margin-bottom: .4rem;
+            }
+
+            .Lead {
+                // margin: 2rem;
+            }
+
+            .Requirements {
+                // margin: 2rem;
+            }
+        }
+
         .Leaders {
-            margin-bottom: 2rem;
+            margin-bottom: 3.5rem;
+            background-color: #eee;
+            padding: 4rem 0;
             
             h3 {
                 font-size: 2.5rem;
@@ -262,6 +323,7 @@
             .Image {
                 max-height: 20rem;
                 border-radius: 2rem;
+                // margin-bottom: 2rem;
             }
         }
     }

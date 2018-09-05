@@ -1,4 +1,4 @@
-import { REQUEST_PRAYER, REQUEST_PRAYER_SUCCESS, REQUEST_PRAYER_FAILED,CLEAR_PRAYER_REQUEST_FORM } from '../actions/types';
+import { LEAD_FORM, LEAD_FORM_SUCCESS, LEAD_FORM_FAILED, CLEAR_LEAD_FORM } from '../actions/types';
 
 const INITIAL_STATE = {
     loading: false,
@@ -8,16 +8,16 @@ const INITIAL_STATE = {
 
 export default (state = INITIAL_STATE, action) => {
     switch(action.type) {
-        case REQUEST_PRAYER:
+        case LEAD_FORM:
             return { ...state, loading: true, message: '' }
 
-        case REQUEST_PRAYER_SUCCESS:
-            return { ...state, loading: false, message: 'Prayer request sent successfully!', sent: true }
+        case LEAD_FORM_SUCCESS:
+            return { ...state, loading: false, message: 'Request sent successfully!', sent: true }
 
-        case REQUEST_PRAYER_FAILED:
+        case LEAD_FORM_FAILED:
             return { ...state, loading: false, message: action.payload }
 
-        case CLEAR_PRAYER_REQUEST_FORM:
+        case CLEAR_LEAD_FORM:
             return INITIAL_STATE;
 
         default:

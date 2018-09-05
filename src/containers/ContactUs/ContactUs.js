@@ -38,9 +38,11 @@ class ContactUs extends Component {
                                     <p> 
                                         <a href="mailto:youremailhere@mail.com"> info@mission2n.com </a>
                                         <br style={{ marginBottom: '.5rem' }} />
-                                        080-370-255-70
+                                        +234-80-370-255-70
                                         <br />
-                                        081-776-690-73
+                                        +234-81-776-690-73
+                                        <br />
+                                        +41-764-534-622
                                     </p>
                                 </div> 
                             </div>

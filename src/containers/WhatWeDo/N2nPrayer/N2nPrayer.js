@@ -56,7 +56,7 @@ class N2nPrayer extends Component {
                                         including your ministry please call 
                                         <strong style={{ color: '#2DBCBC' }}> +2348037025570 </strong> or submit your prayer request
                                     </p>
-                                    <PrayerRequestForm message={this.props.message} loading={this.props.loading} prayerRequest={this.props.prayerRequest} />
+                                    <PrayerRequestForm message={this.props.message} sent={this.props.sent} loading={this.props.loading} prayerRequest={this.props.prayerRequest} />
                                 </div>
                             </div>
                         </div>
@@ -72,6 +72,7 @@ const mapStateToProps = state => {
     return {
         message: state.PrayerNetworkReducer.message,
         loading: state.PrayerNetworkReducer.loading,
+        sent: state.PrayerNetworkReducer.sent,
     }
 }
 
