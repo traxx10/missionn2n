@@ -18,20 +18,20 @@
             background-image: -moz-linear-gradient(to right bottom,
                 rgba(#2DBCBC, 0.6),
                 rgba(#008686, 0.6)),
-                url('../../../assets/every_child_count.jpeg');
+                url('../../../assets/prayer-network.jpeg');
             background-image: -webkit-linear-gradient(to right bottom,
                     rgba(#2DBCBC, 0.6),
                     rgba(#008686, 0.6)),
-                    url('../../../assets/every_child_count.jpeg');
+                    url('../../../assets/prayer-network.jpeg');
             background-image: -o-linear-gradient(to right bottom,
                     rgba(#2DBCBC, 0.6),
                     rgba(#008686, 0.6)),
-                    url('../../../assets/every_child_count.jpeg');
+                    url('../../../assets/prayer-network.jpeg');
             background-image: linear-gradient(
                 to right bottom,
                 rgba(#2DBCBC, 0.6),
                 rgba(#008686, 0.6)),
-                url('../../../assets/every_child_count.jpeg');
+                url('../../../assets/prayer-network.jpeg');
             background-size: cover;
             background-position: top;
             position: relative;
@@ -134,6 +134,10 @@
                 padding: 0 2rem;
                 text-align: center;
             }
+        }
+
+        .Form {
+            background-color: #eee;
         }
     }
 }

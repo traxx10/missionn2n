@@ -4,3 +4,7 @@ export const FETCH_EVENTS_SUCCESS = 'fetch_events_success';
 export const TOGGLE_MODAL = 'toggle_modal';
 export const KEEP_UPDATE = 'keep_update';
 export const KEEP_UPDATE_SUCCESS = 'keep_update_success';
+export const REQUEST_PRAYER = 'request_prayer';
+export const REQUEST_PRAYER_SUCCESS = 'request_prayer_success';
+export const REQUEST_PRAYER_FAILED = 'request_prayer_failed';
+export const CLEAR_PRAYER_REQUEST_FORM = 'clear_prayer_request_form';

@@ -54,9 +54,9 @@ class Menus extends Component {
                                         GENERATION NEXT DISCIPLESHIP MISSION 
                                     </a>
                                 </MenuItem>
-                                <MenuItem key="/n2n-prayer-partners">
-                                    <NavLink className={styles.subMenuNavLink} style={subMenu.navLink} activestyle={subMenu.activestyle} to="/n2n-prayer-partners">
-                                        N2N PRAYER PARTNERS
+                                <MenuItem key="/n2n-prayer-network">
+                                    <NavLink className={styles.subMenuNavLink} style={subMenu.navLink} activestyle={subMenu.activestyle} to="/n2n-prayer-network">
+                                        N2N PRAYER NETWORK
                                     </NavLink>
                                 </MenuItem>
                                 <MenuItem key="/every-child-count">

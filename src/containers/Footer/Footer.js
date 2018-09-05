@@ -47,7 +47,7 @@ class Footers extends Component {
 
                             <h4> AWKA </h4>
                             <h5> 
-                                Your address in awka
+                                Emmaus House
                             </h5>
                         </div>
                     </Col>
@@ -61,7 +61,7 @@ class Footers extends Component {
                             <h3> Connect </h3>
                             <br />
                             <div className={styles.ConnectIcons}>
-                                <a href="#">
+                                <a href="https://www.facebook.com/missionn2n/" target="_blank">
                                     <div className={styles.Avatar}>
                                         <Image className={styles.Image} alt="n2nfacebook" src={[ Facebook ]} />
                                     </div>

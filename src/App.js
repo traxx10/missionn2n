@@ -90,7 +90,7 @@ class App extends Component {
                       <Route path="/get-involved" exact component={GetInvolved} />
                       <Route path="/n2n-missions" exact component={N2nMissions} />
                       <Route path="/church-ministry" exact component={ChurchMinistry} />
-                      <Route path="/n2n-prayer-partners" exact component={N2nPrayer} />
+                      <Route path="/n2n-prayer-network" exact component={N2nPrayer} />
                       <Route path="/every-child-count" exact component={EveryChildCount} />
                       <Route path="/church-planting" exact component={ChurchPlanting} />
                       <Route path="/contact-us" exact component={ContactUs} />
