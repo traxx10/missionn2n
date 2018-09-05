@@ -32,8 +32,7 @@ class N2nPrayer extends Component {
                                         <hr />
                                     </div>
                                     <p>
-                                        This is the time for great intercession. Our house or community
-                                        must be a house for prayer.
+                                        This is the time for great intercession.
                                         We must go on our Knees for all nations.
                                         The only way to get the world ready for the second coming of
                                         Christ is through intercession.

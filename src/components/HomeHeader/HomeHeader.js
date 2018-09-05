@@ -13,8 +13,27 @@ class HomeHeader extends Component {
                         <div className={styles.ImageContainer}>
                             <div className={styles.Text}>
                                 <div className={styles.TextContainer}>
-                                    <h1> WELCOME TO N2N MISSION </h1>
-                                    <h3> <i> Your tagline </i> </h3>
+                                    <h1 
+                                        style={{    
+                                                    fontSize: '5rem', 
+                                                    marginBottom: '0',
+                                                    paddingBottom: '0', 
+                                                    fontWeight: '600'}}> WELCOME </h1>
+                                    <h1
+                                        style={{    
+                                            fontSize: '2.5rem', 
+                                            marginBottom: '0',
+                                            paddingBottom: '0', 
+                                            fontWeight: '300'}}
+                                    > TO </h1>
+                                    <h1
+                                        style={{    
+                                            fontSize: '3rem', 
+                                            marginBottom: '.5rem',
+                                            paddingBottom: '0', 
+                                            fontWeight: '300'}}
+                                    > NATION 2 NATION </h1>
+                                    <span> <i> Every college.    Every campus.    Every community </i> </span>
                                 </div>
                                 <Button className={styles.Button}>
                                     <a href="/who-we-are" className={styles.Link}> READ MORE </a>

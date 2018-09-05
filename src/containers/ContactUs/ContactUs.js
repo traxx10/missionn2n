@@ -5,30 +5,6 @@ import Footer from '../Footer/Footer';
 import styles from './ContactUs.module.scss';
 
 class ContactUs extends Component {
-    // state = {
-    //     loading: true,
-    // }
-
-    // componentDidMount() {
-    //     setTimeout(() => {
-    //         this.setState({ loading: false })
-    //     }, 2000)
-    // }
-
-    // renderComponent = () => {
-    //     if(this.state.loading) {
-    //         return (
-    //             <div className={styles.Loading}>
-    //                 <Icon style={{ color: '#2DBCBC', fontSize: '5rem' }} type="loading" />
-    //             </div>
-    //         )
-    //     } else if(this.state.loading === false) {
-    //         return (
-                
-    //         )
-    //     }
-    // }
-
 
     render() {
         return (
@@ -58,7 +34,7 @@ class ContactUs extends Component {
                                     </div>
                                 </div>
                                 <div className={styles.Body}>
-                                    <h2> N2N MISSION </h2>
+                                    <h2> N2N GOSPEL MISSION </h2>
                                     <p> 
                                         <a href="mailto:youremailhere@mail.com"> youremailhere@mail.com </a>
                                         <br style={{ marginBottom: '.5rem' }} />

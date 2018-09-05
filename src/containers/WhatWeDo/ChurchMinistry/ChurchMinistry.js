@@ -34,7 +34,7 @@ class ChurchMinistry extends Component {
                                     <p>
                                         We partner with churches, organizations and others to reach a world in
                                         need of spiritual and physical help. We assist churches design a discipleship
-                                        plan and train as it concerns their needs.
+                                        plan and train as it concerns their need.
                                     </p>
                                 </div>
                             </div>

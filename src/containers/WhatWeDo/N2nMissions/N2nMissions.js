@@ -37,10 +37,10 @@ class N2nMissions extends Component {
                                         that over of the 7.2 billion people alive in the world today, 
                                         3.0 billion of them live in unreached people groups with little or no access to the 
                                         Gospel of Jesus Christ.
-                                        Over 51 million souls are still beyond the reach of the Gospel wgich means that no church, 
-                                        no missionary, no mission agency, no one has yet taken responsibility Jesus Christ.
+                                        Over 51 million souls are still beyond the reach of the Gospel which means that no church, 
+                                        no missionary, no mission agency, no one has yet taken the responsibility to preach Jesus Christ.
                                         We demonstrate God's love by alleviating need and suffering of the poorest of the poor.
-                                        Reaching them with the only gospel would make our impact incomplete. We are always armed
+                                        Reaching them with the gospel only would make our impact incomplete. We are always armed
                                         with the gospel in one hand and with the provision of clothing, food, medical care and 
                                         other basic necessities of life in the other hand.
                                     </p>
