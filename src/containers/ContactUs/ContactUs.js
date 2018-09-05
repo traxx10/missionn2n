@@ -36,7 +36,7 @@ class ContactUs extends Component {
                                 <div className={styles.Body}>
                                     <h2> N2N GOSPEL MISSION </h2>
                                     <p> 
-                                        <a href="mailto:youremailhere@mail.com"> youremailhere@mail.com </a>
+                                        <a href="mailto:youremailhere@mail.com"> info@mission2n.com </a>
                                         <br style={{ marginBottom: '.5rem' }} />
                                         080-370-255-70
                                         <br />

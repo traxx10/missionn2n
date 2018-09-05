@@ -46,6 +46,7 @@
                     font-weight: 300;
                     color: #fff;
                     text-align: center;
+                    animation: mission 1s ease-in forwards;
                 }
         
                 .titleLine {
@@ -55,6 +56,7 @@
                     margin: 1.8rem auto 3.8rem;
                     clear: both;
                     position: relative;
+                    animation: titleLine 1s ease-in forwards;
         
                     hr {
                         width: 9.9rem;
@@ -161,5 +163,39 @@
                 }
             }
         }
+    }
+}
+
+@keyframes mission {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        opacity: 0.8;
+        transform: translateX(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes titleLine {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    // 80% {
+    //     opacity: 0.8;
+    //     transform: translateX(2rem);
+    // }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
     }
 }
