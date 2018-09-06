@@ -37,7 +37,7 @@ class EventDetail extends Component {
                                     <Card bodyStyle={bodyStyle.style} bordered={false} className={styles.Card}>
                                     <Img 
                                         loader={ <Icon style={{ 
-                                            color: '#2DBCBC', 
+                                            color: '#ff00cc', 
                                             fontSize: '2rem',
                                             display: 'flex',
                                             marginBottom: '1.5rem',
@@ -52,9 +52,9 @@ class EventDetail extends Component {
                                         ]} 
                                         className={styles.Image} />
                                         <h1> {this.props.location.state.eventDetail.location} </h1>
-                                        <h2 style={{ color: '#2DBCBC', fontWeight: '700' }}> Contact </h2>
+                                        <h2 style={{ color: '#ff00cc', fontWeight: '700' }}> Contact </h2>
                                         <h2 className={styles.subtitle}> {this.props.location.state.eventDetail.contact_name} </h2>
-                                        <h2 style={{ color: '#2DBCBC'}} className={styles.subtitle}> <i> {this.props.location.state.eventDetail.contact_email} </i> </h2>
+                                        <h2 style={{ color: '#ff00cc'}} className={styles.subtitle}> <i> {this.props.location.state.eventDetail.contact_email} </i> </h2>
                                         <h2 style={{ marginBottom: '1rem' }} className={styles.subtitle}> {this.props.location.state.eventDetail.contact_number} </h2>
                                     </Card>
                                 </Col>

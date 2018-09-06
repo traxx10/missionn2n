@@ -24,23 +24,21 @@
             align-items: center;
             flex-direction: column;
             text-align: center;
-            background-image: -moz-linear-gradient(to right bottom,
-                rgba(#2DBCBC, 0.6),
-                rgba(#008686, 0.6)),
+            background-image: 
                 url('../../assets/events.jpg');
-            background-image: -webkit-linear-gradient(to right bottom,
-                    rgba(#2DBCBC, 0.6),
-                    rgba(#008686, 0.6)),
-                    url('../../assets/events.jpg');
-            background-image: -o-linear-gradient(to right bottom,
-                    rgba(#2DBCBC, 0.6),
-                    rgba(#008686, 0.6)),
-                    url('../../assets/events.jpg');
-            background-image: linear-gradient(
-                to right bottom,
-                rgba(#2DBCBC, 0.6),
-                rgba(#008686, 0.6)),
-                url('../../assets/events.jpg');
+            // background-image: -webkit-linear-gradient(to right bottom,
+            //         rgba(#ff00cc, 0.6),
+            //         rgba(#008686, 0.6)),
+            //         url('../../assets/events.jpg');
+            // background-image: -o-linear-gradient(to right bottom,
+            //         rgba(#ff00cc, 0.6),
+            //         rgba(#008686, 0.6)),
+            //         url('../../assets/events.jpg');
+            // background-image: linear-gradient(
+            //     to right bottom,
+            //     rgba(#ff00cc, 0.6),
+            //     rgba(#008686, 0.6)),
+            //     url('../../assets/events.jpg');
             background-size: cover;
             background-position: top;
             position: relative;
@@ -144,7 +142,7 @@
             text-align: left;
 
             h1 {
-                border-bottom: 1px solid #2DBCBC;
+                border-bottom: 1px solid #ff00cc;
                 text-align: center;
                 display: inline-block;
                 padding: .5rem;

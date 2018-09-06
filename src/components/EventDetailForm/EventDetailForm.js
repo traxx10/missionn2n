@@ -18,7 +18,7 @@ class EventDetailForm extends Component {
         if(this.props.loading) {
             return  (
                 <div style={{ margin: 'auto' }}>
-                    <Icon type="loading" style={{ fontSize: '2.5rem', color: "#2DBCBC" }}/>
+                    <Icon type="loading" style={{ fontSize: '2.5rem', color: "#ff00cc" }}/>
                 </div>
             )
         } else return null

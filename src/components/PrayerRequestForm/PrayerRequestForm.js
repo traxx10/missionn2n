@@ -20,7 +20,7 @@ class PrayerRequestForm extends Component {
         if(this.props.loading) {
             return  (
                 <div style={{ margin: 'auto' }}>
-                    <Icon type="loading" style={{ fontSize: '2.5rem', color: "#2DBCBC", textAlign: 'center' }}/>
+                    <Icon type="loading" style={{ fontSize: '2.5rem', color: "#ff00cc", textAlign: 'center' }}/>
                 </div>
             )
         } else return null

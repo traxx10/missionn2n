@@ -20,7 +20,7 @@ class LeadForm extends Component {
         if(this.props.loading) {
             return  (
                 <div style={{ margin: 'auto' }}>
-                    <Icon type="loading" style={{ fontSize: '2.5rem', color: "#2DBCBC", textAlign: 'center' }}/>
+                    <Icon type="loading" style={{ fontSize: '2.5rem', color: "#ff00cc", textAlign: 'center' }}/>
                 </div>
             )
         } else return null
@@ -34,7 +34,7 @@ class LeadForm extends Component {
                         <p> 
                             You want to start a LEAD centre or to become a member 
                             wherever you are in the world, please call 
-                            <strong style={{ color: '#2DBCBC'}}> +2348037025570 </strong> 
+                            <strong style={{ color: '#ff00cc'}}> +2348037025570 </strong> 
                             or fill the form below to apply.
                         </p>
                         <Form onSubmit={this.handleSubmit}>

@@ -18,19 +18,19 @@
                 padding: 0 2rem;
 
                 &:active, &:hover {
-                    border-bottom: 4px solid #2DBCBC;
+                    border-bottom: 4px solid #ff00cc;
                 }
             }
 
             .ActiveLink {
-                border-bottom: 4px solid #2DBCBC;
+                border-bottom: 4px solid #ff00cc;
             }
 
         }
 
         .SubMenu {
             &:active, &:hover {
-                border-bottom: 4px solid #2DBCBC !important;
+                border-bottom: 4px solid #ff00cc !important;
             }
 
             .Title {
@@ -59,7 +59,7 @@
             }
 
             .ActiveLink {
-                color:#2DBCBC !important;
+                color:#ff00cc !important;
             }
         }
 

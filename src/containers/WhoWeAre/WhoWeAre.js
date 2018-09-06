@@ -37,8 +37,9 @@ class WhoWeAre extends Component {
                             </div>
                             <div className={styles.Body}>
                                 <p className={styles.Header}>
-                                    We exist to glorify God and to make disciples of all nations towards
-                                    to advancement of the Kingdom of God.
+                                    N2N is an international faith Gospel mission. Out of the burning desire to be part
+                                    of God's vision in preparing for the return of the king to the earth is why this cause was
+                                    established.
                                 </p>
                                 <div className={styles.Row}>
                                     <Row>
@@ -60,11 +61,25 @@ class WhoWeAre extends Component {
                                         sm={{ span: 24}}
                                         xs={{ span: 24 }}>
                                             <p>
-                                                We bring people into a better relationship with God so that God would be glorified.
+                                                <strong style={{ color: '#ff00cc', fontSize: '2rem'}}> Is there more to Life? </strong> <br />
+                                                Have you ever felt there must be something more? 
+                                                Maybe something beyond merely existing? Perhaps you have once thought that the big break or a particular life accomplishment would definitely fill the emptiness. And when it finally happened, you were so disappointed. You still felt that emptiness. You did not feel fulfilled as you thought. There is something missing! 
+                                                It is like a super star footballer who gets back to depression after winning a championship. No one knows you feel this way about life. And on the outside it does not show. Some people even wished that their lives would be like yours but do not know how empty and unfulfilled you are inside. Beloved! Your experience is not unique. Nothing in this world satisfies or gives fulfillment. The only source of true fulfillment is God. God offers a life of fulfillment and meaning to anyone who seek Him. 
+                                                Your life can be meaningful. Life is more than pleasure seeking. The enjoyment and satisfaction it gives does not last. 
+                                                It is for a moment and then gone. If there is no larger meaning beyond this world to life then life is lacks substance. God gives your life substance because it has eternal value. 
+                                                It is beyond this world. Jesus said if you follow me and do my commandments, your life will be transformed and exciting. 
+                                                He will forgive you and give you inner peace. He will give you hope and joy beyond this world. 
+                                                You can have a good relationship with God. True worship comes from a deep relationship with God. 
+                                                And there is that feeling of fulfillment that comes with it.
+                                                <br style={{ marginBottom: '1rem'}}/>
+                                                With this in mind, we exist to bring and guide men into a deeper relationship with God 
+                                                so that God would be glorified.
+                                                <br style={{ marginBottom: '1rem'}} />
                                                 To Glorify God means to worship and serve him.
                                                 Our Burning passion is to see 
                                                 <strong> "every nation, tribe, people and language" </strong> together worshipping 
                                                 the lamb.
+                                                <br />
                                             </p>
                                         </Col>
                                     </Row>
@@ -192,7 +207,7 @@ class WhoWeAre extends Component {
                                                     {/* <div className={styles.ImageContainer}> */}
                                                         <Image className={styles.Image} src={[ Roseline, Roseline ]} />
                                                         <h2 style={{ marginTop: '1rem', marginBottom: '0' }}> Roseline Eigenmann </h2>
-                                                        <h2 style={{ fontWeight: '100', margin: 'auto' }}> National Coordinator Zurich, Switzerland </h2>
+                                                        <h2 style={{ fontWeight: '100', margin: 'auto' }}> National Coordinator Switzerland </h2>
                                                     {/* </div> */}
                                                 </Col>
                                             </Row>
@@ -216,7 +231,7 @@ class WhoWeAre extends Component {
                                                 <h2> THE L. E. A. D System  </h2>
                                                 <p>
                                                     N2N <strong> Leadership Empowerment And Development </strong>
-                                                    system is a sustainable and multiplying discipleship. 
+                                                    system is a sustainable and multiplying discipleship 
                                                     platform established to enable us accomplish our goal. 
                                                     It consist of small groups located on every college, 
                                                     every campus and every community through which we reach, 

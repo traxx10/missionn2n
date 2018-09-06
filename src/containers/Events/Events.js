@@ -22,7 +22,7 @@ class Events extends Component {
         if(this.props.loading) {
             return (
                 <div className={styles.Loader}>
-                    <BarLoader style={{ margin: '4rem' }} color="#2DBCBC" size={7} />
+                    <BarLoader style={{ margin: '4rem' }} color="#ff00cc" size={7} />
                 </div>
             )
         } else if(this.props.loading === false) {
@@ -43,7 +43,7 @@ class Events extends Component {
                         <Card bordered={false} bodyStyle={bodyStyle.cardStyle} className={styles.Card}>
                             <Img 
                                 loader={ <Icon style={{ 
-                                    color: '#2DBCBC', 
+                                    color: '#ff00cc', 
                                     fontSize: '2rem',
                                     display: 'flex',
                                     marginBottom: '1.5rem',

@@ -1,27 +1,35 @@
-.HomeGetInvolved {
-    padding: 4.4rem 1.5rem 9.5rem;
+.HomeHeader {
     text-align: center;
-    background-image: -moz-linear-gradient(to right bottom,
-        rgba(#ff00cc, 0.6),
-        rgba(#333399, 0.6)),
-        url('../../assets/cross.jpeg');
-    background-image: -webkit-linear-gradient(to right bottom,
-            rgba(#ff00cc, 0.6),
-            rgba(#333399, 0.6)),
-            url('../../assets/cross.jpeg');
-    background-image: -o-linear-gradient(to right bottom,
-            rgba(#ff00cc, 0.6),
-            rgba(#333399, 0.6)),
-            url('../../assets/cross.jpeg');
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(#ff00cc, 0.6),
-        rgba(#333399, 0.6)),
-        url('../../assets/cross.jpeg');
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    background-repeat: no-repeat;
+    margin-bottom: 4rem;
+    padding: 4.4rem 1.5rem 9.5rem;
+
+    .Carousel {
+        border-radius: 4rem;
+        width: 70%;
+        margin: 4rem auto 5rem auto;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+
+        .eventImage {
+            position: relative;
+
+            .Image {
+                width: 100%;
+                max-height: 75vh;
+                padding: 2rem;
+                border-radius: 4rem
+            }
+
+            p {
+                font-weight: 200;
+                font-size: 3rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .Image {
+        width: 100%;
+    }
 
     .Header {
 
@@ -30,14 +38,14 @@
             line-height: 4rem;
             text-transform: uppercase;
             font-weight: 300;
-            color: #fff;
+            color: #303030;
             text-align: center;
         }
 
         .titleLine {
             width: 25.6rem;
             height: 1px;
-            background: #383838;
+            background: rgba(184,184,184,0.25);
             margin: 1.8rem auto 3.8rem;
             clear: both;
             position: relative;
@@ -45,7 +53,7 @@
             hr {
                 width: 9.9rem;
                 height: .7rem;
-                background: #fff;
+                background: #ff00cc;
                 border: 0;
                 outline: none;
                 margin: 0 auto;
@@ -58,38 +66,19 @@
     }
 
     .Body {
-        
-        
         p {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             line-height: 2.7rem;
             margin: 0 20rem;
             font-weight: 100;
             text-align: left;
             margin-bottom: 5rem;
-            color: #fff;
-        }
-
-        .Button {
-            height: 4rem;
-            transition: all .3s ease-in-out;
-
-            &:hover {
-                transform: translateY(-1rem);
-                box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-            }
-
-            .Link {
-                text-align: center;
-                font-size: 2rem;
-                padding: 1rem;
-            }
         }
     }
 }
 
 @media screen and (max-width: 860px) {
-    .HomeGetInvolved {
+    .HomeHeader {
         .Body {
             
             p {
@@ -111,7 +100,27 @@
 }
 
 @media screen and (max-width: 550px) {
-    .HomeGetInvolved {
+    .HomeHeader {
+        .Carousel {
+            width: 100%;
+    
+            .eventImage {
+                position: relative;
+    
+                .Image {
+                    width: 100%;
+                    max-height: 75vh;
+                    padding: 2rem;
+                    border-radius: 4rem
+                }
+    
+                p {
+                    font-weight: 500;
+                    font-size: 3rem;
+                }
+            }
+        }
+        
         .Header {
             h1 {
                 font-size: 2.8rem;

@@ -13,23 +13,21 @@
             align-items: center;
             flex-direction: column;
             text-align: center;
-            background-image: -moz-linear-gradient(to right bottom,
-                rgba(#2DBCBC, 0.6),
-                rgba(#008686, 0.6)),
+            background-image: 
                 url('../../assets/events.jpg');
-            background-image: -webkit-linear-gradient(to right bottom,
-                    rgba(#2DBCBC, 0.6),
-                    rgba(#008686, 0.6)),
-                    url('../../assets/events.jpg');
-            background-image: -o-linear-gradient(to right bottom,
-                    rgba(#2DBCBC, 0.6),
-                    rgba(#008686, 0.6)),
-                    url('../../assets/events.jpg');
-            background-image: linear-gradient(
-                to right bottom,
-                rgba(#2DBCBC, 0.6),
-                rgba(#008686, 0.6)),
-                url('../../assets/events.jpg');
+            // background-image: -webkit-linear-gradient(to right bottom,
+            //         rgba(#ff00cc, 0.6),
+            //         rgba(#008686, 0.6)),
+            //         url('../../assets/events.jpg');
+            // background-image: -o-linear-gradient(to right bottom,
+            //         rgba(#ff00cc, 0.6),
+            //         rgba(#008686, 0.6)),
+            //         url('../../assets/events.jpg');
+            // background-image: linear-gradient(
+            //     to right bottom,
+            //     rgba(#ff00cc, 0.6),
+            //     rgba(#008686, 0.6)),
+            //     url('../../assets/events.jpg');
             background-size: cover;
             background-position: top;
             position: relative;
@@ -109,13 +107,13 @@
             text-align: center;
 
             h1 {
-                color: #2DBCBC;
+                color: #ff00cc;
                 font-weight: 500;
                 padding: 1rem;
                 font-size: 1.7rem;
                 line-height: 1.5rem;
                 display: inline-block;
-                border: 2px solid #2DBCBC;
+                border: 2px solid #ff00cc;
                 margin-right: 2rem;
             }
 

@@ -7,3 +7,6 @@
 [0830/183239.395:ERROR:file_io_win.cc(161)] CreateFile C:\Users\traxx\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
 [0830/183239.400:ERROR:file_io_win.cc(170)] CreateFile C:\Users\traxx\AppData\Local\Google\Chrome\User Data\Crashpad\reports\3118685a-defb-4adb-be46-d3fa4ee2cf81.dmp: The system cannot find the path specified. (0x3)
 [0830/183239.400:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0906/114521.297:ERROR:file_io_win.cc(161)] CreateFile C:\Users\traxx\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0906/114521.302:ERROR:file_io_win.cc(170)] CreateFile C:\Users\traxx\AppData\Local\Google\Chrome\User Data\Crashpad\reports\559bd837-67cf-43a8-a669-7fc917b24b5b.dmp: The system cannot find the path specified. (0x3)
+[0906/114521.302:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed

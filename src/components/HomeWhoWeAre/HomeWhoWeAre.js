@@ -17,10 +17,10 @@ class HomeWhoWeAre extends Component {
                         </div>
                         <div className={styles.Body}>
                             <p> 
-                                We exist to glorify God and to make disciples of all nations towards
-                                to advancement of the Kingdom.
-                                We bring people into proper relationship with God so that God will be glorified.
-                                To Glorify God means to serve and worship him.
+                                N2N is an international faith Gospel mission. 
+                                Out of the burning desire to be part of God's vision in 
+                                preparing for the return of the king to the earth is why this cause 
+                                was established.
                             </p>
                             <Button className={styles.Button}>
                                 <a href="/who-we-are" className={styles.Link}> READ MORE </a>

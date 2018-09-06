@@ -108,7 +108,7 @@ class Footers extends Component {
                        <h3 
                             style={{ textAlign: 'right' }} > <Icon type="copyright" style={{ paddingRight: '.5rem'}} /> 
                             COPYRIGHT 
-                            <span style={{ color: '#2DBCBC' }}> N2N MISSION </span>. 
+                            <span style={{ color: '#ff00cc' }}> N2N MISSION </span>. 
                             ALL RIGHTS RESERVED. </h3>
                     </Col>
                 </Row>
