@@ -1,4 +1,5 @@
 .Carousel {
+
     .ImageContainer {
         height: 95vh;
         position: relative;
@@ -11,25 +12,26 @@
             align-items: center;
             flex-direction: column;
             text-align: center;
-            background-image: -moz-linear-gradient(to right bottom,
-                rgba(#2DBCBC, 0.6),
-                rgba(#008686, 0.6)),
-                url('../../assets/map.jpeg');
+            background-image: 
+                -moz-linear-gradient(to right bottom,
+                rgba(#000, 0.3),
+                rgba(#000, 0.3)),
+                url('../../assets/maps.jpg');
             background-image: -webkit-linear-gradient(to right bottom,
-                    rgba(#2DBCBC, 0.6),
-                    rgba(#008686, 0.6)),
-                    url('../../assets/map.jpeg');
+                    rgba(#000, 0.3),
+                    rgba(#000, 0.3)),
+                    url('../../assets/maps.jpg');
             background-image: -o-linear-gradient(to right bottom,
-                    rgba(#2DBCBC, 0.6),
-                    rgba(#008686, 0.6)),
-                    url('../../assets/map.jpeg');
+                    rgba(#000, 0.3),
+                    rgba(#000, 0.3)),
+                    url('../../assets/maps.jpg');
             background-image: linear-gradient(
                 to right bottom,
-                rgba(#2DBCBC, 0.6),
-                rgba(#008686, 0.6)),
-                url('../../assets/map.jpeg');
+                rgba(#000, 0.3),
+                rgba(#000, 0.3)),
+                url('../../assets/maps.jpg');
             background-size: cover;
-            background-position: top;
+            background-position: center;
             position: relative;
             background-repeat: no-repeat;
 
@@ -77,34 +79,25 @@
             align-items: center;
             flex-direction: column;
             text-align: center;
-            background-image: -moz-linear-gradient(to right bottom,
-                rgba(#2DBCBC, 0.3),
-                rgba(#008686, 0.3)),
-                url('../../assets/church-people.jpeg');
-            background-image: -webkit-linear-gradient(to right bottom,
-                    rgba(#2DBCBC, 0.3),
-                    rgba(#008686, 0.3)),
-                    url('../../assets/church-people.jpeg');
-            background-image: -o-linear-gradient(to right bottom,
-                    rgba(#2DBCBC, 0.3),
-                    rgba(#008686, 0.3)),
-                    url('../../assets/church-people.jpeg');
-            background-image: linear-gradient(
-                to right bottom,
-                rgba(#2DBCBC, 0.3),
-                rgba(#008686, 0.3)),
-                url('../../assets/church-people.jpeg');
+            background-image:
+                url('../../assets/prayer-lg.jpg');
             background-size: cover;
             background-position: top;
             position: relative;
             background-repeat: no-repeat;
 
             .TextContainer {
-                margin-bottom: 3rem;
+                // margin-bottom: 3rem;
 
                 h3, h2, h1 {
                     color: #fff;
-                    font-weight: 600;
+                    font-weight: 300;
+                }
+
+                h1 {
+                    font-size: 5.6rem;
+                    letter-spacing: .8rem;
+                    padding: 0 2rem;
                 }
             }
 
@@ -120,12 +113,84 @@
             }
         }
     }
+
+    .ImageContainer3 {
+        height: 95vh;
+        position: relative;
+
+        .Text {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background-image: 
+                -moz-linear-gradient(to right bottom,
+                rgba(#000, 0.3),
+                rgba(#000, 0.3)),
+                url('../../assets/sky-lg.jpg');
+            background-image: -webkit-linear-gradient(to right bottom,
+                    rgba(#000, 0.3),
+                    rgba(#000, 0.3)),
+                    url('../../assets/sky-lg.jpg');
+            background-image: -o-linear-gradient(to right bottom,
+                    rgba(#000, 0.3),
+                    rgba(#000, 0.3)),
+                    url('../../assets/sky-lg.jpg');
+            background-image: linear-gradient(
+                to right bottom,
+                rgba(#000, 0.3),
+                rgba(#000, 0.3)),
+                url('../../assets/sky-lg.jpg');
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            background-repeat: no-repeat;
+
+            .TextContainer {
+                // margin-bottom: 3rem;
+
+                h3, h2, h1 {
+                    color: #fff;
+                    font-weight: 600;
+                    // animation: moveInWelcome 1s ease-in forwards;
+                }
+
+                h1 {
+                    font-size: 5.6rem;
+                    letter-spacing: .8rem;
+                    padding: 2rem;
+                }
+
+                p {
+                    font-size: 3.5rem;
+                    color: #fff;
+                    padding: 0 2rem;
+                }
+            }
+
+            .Button {
+                padding: 0 6rem;
+                height: 5rem;
+                border-radius: 4rem;
+                // animation: button 1s ease-in forwards;
+
+                .Link {
+                    font-size: 2rem;
+                    color: #424242;
+                }
+            }
+        }
+    }
 }
 
 @media screen  and (max-width: 650px) {
     .Carousel {
+
         .ImageContainer {
-            height: 85vh;
+            height: 75vh;
 
             .Text {
                 .TextContainer {
@@ -146,13 +211,46 @@
         }
 
         .ImageContainer2 {
-            height: 85vh;
+            height: 75vh;
 
             .Text {
                 .TextContainer {
                     
                     h1, h3 {
                         margin: 0 2rem;
+                    }
+
+                    h1 {
+                        font-size: 4rem;
+                    }
+                }
+                
+                .Button {
+                    padding: 0 4rem;
+
+                    .Link {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        .ImageContainer3 {
+            height: 75vh;
+
+            .Text {
+                .TextContainer {
+                    
+                    h1, h3 {
+                        margin: 0 2rem;
+                    }
+
+                    h1 {
+                        font-size: 4rem;
+                    }
+
+                    p {
+                        font-size: 2.5rem;
                     }
                 }
                 

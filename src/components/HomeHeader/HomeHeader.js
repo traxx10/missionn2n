@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { useShallowEqual } from 'shouldcomponentupdate-children';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { Row, Col, Carousel, Button } from 'antd';
 import styles from './HomeHeader.module.scss';
 
@@ -9,7 +10,7 @@ class HomeHeader extends Component {
         return (
             <Row>
                 <Col span={24}>
-                    <Carousel autoplay className={styles.Carousel} >
+                    <Carousel easing="ease-in" dots={false} autoplay={true} className={styles.Carousel} >
                         <div className={styles.ImageContainer}>
                             <div className={styles.Text}>
                                 <div className={styles.TextContainer}>
@@ -40,17 +41,32 @@ class HomeHeader extends Component {
                                 </Button>
                             </div>
                         </div>
-                        {/* <div className={styles.ImageContainer2}>
+                        <div className={styles.ImageContainer2}>
                             <div className={styles.Text}>
                                 <div className={styles.TextContainer}>
-                                    <h1> LUMINARIES </h1>
-                                    <h3> <i> August 29-31 </i> </h3>
+                                    <h1> JOIN OUR PRAYER NETWORK </h1>
                                 </div>
                                 <Button className={styles.Button}>
-                                    <a href="/events" className={styles.Link}> MORE EVENTS </a>
+                                    <a href="/n2n-prayer-network" className={styles.Link}> JOIN </a>
                                 </Button>
                             </div>
-                        </div> */}
+                        </div>
+                        <div className={styles.ImageContainer3}>
+                            <div className={styles.Text}>
+                                <div className={styles.TextContainer}>
+                                    <h1> Habakkuk 2: 2 NKJV </h1>
+                                    <p>
+                                        <i>
+                                        "Then the Lord... Said, write the vision, and make it plain on tablets, 
+                                        that he may run who reads it."
+                                        </i>
+                                    </p>
+                                </div>
+                                {/* <Button className={styles.Button}>
+                                    <Link smooth to='/#welcome' className={styles.Link}> CONTINUE </Link>
+                                </Button> */}
+                            </div>
+                        </div>
                     </Carousel>
                 </Col>
             </Row>

@@ -8,6 +8,7 @@ import Footer from '../Footer/Footer';
 import HomeHeader from '../../components/HomeHeader/HomeHeader';
 import HomeWhoWeAre from '../../components/HomeWhoWeAre/HomeWhoWeAre';
 import HomeGetInvolved from '../../components/HomeGetInvolved/HomeGetInvolved';
+import HomeWelcome from '../../components/HomeWelcome/HomeWelcome';
 import styles from './Home.module.scss';
 
 class Home extends Component {
@@ -21,6 +22,7 @@ class Home extends Component {
                 <Row>
                     <Col span={24}>
                         <HomeHeader events={this.props.events} />
+                        <HomeWelcome />
                         <HomeWhoWeAre />
                         <HomeGetInvolved />
                     </Col>

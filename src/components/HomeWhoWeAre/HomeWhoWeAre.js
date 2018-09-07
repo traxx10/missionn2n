@@ -7,7 +7,14 @@ class HomeWhoWeAre extends Component {
     render() {
         return (
             <Row style={{ backgroundColor: '#fff' }} >
-                <Col span={24}>
+                <Col xl={{ span: 3}} lg={{ span: 3}} md={{ span: 3 }} sm={{ span: 24}} xs={{ span: 24}}/>
+                <Col 
+                    xl={{ span: 18 }}
+                    lg={{ span: 18}}
+                    md={{ span: 18 }}
+                    sm={{ span: 24}}
+                    xs={{ span: 24}}
+                >
                     <div className={styles.HomeWhoWeAre}>
                         <div className={styles.Header}>
                             <h1> WHO WE ARE </h1>
@@ -28,6 +35,7 @@ class HomeWhoWeAre extends Component {
                         </div>
                     </div>
                 </Col>
+                <Col xl={{ span: 3}} lg={{ span: 3}} md={{ span: 3 }} sm={{ span: 24}} xs={{ span: 24}}/>
             </Row>
         )
     }

@@ -9,7 +9,7 @@ class N2nMissions extends Component {
         return (
             <div>
                 <Row>
-                    <Col span={24}>
+                    <Col>
                         <div className={styles.N2nMissions}>
                             <div className={styles.ImageContainer}>
                                 <div className={styles.Text}>
@@ -25,27 +25,39 @@ class N2nMissions extends Component {
                                     </div> */}
                                 </div>
                             </div>
-                            <div className={styles.Body}>
-                                <div className={styles.Header}>
-                                    <h3> N2N MISSIONS </h3>
-                                    <div className={styles.titleLine}>
-                                        <hr />
+                            <Row>
+                            <Col xl={{ span: 3}} lg={{ span: 3}} md={{ span: 3 }} sm={{ span: 24}} xs={{ span: 24}}/>
+                            <Col 
+                                xl={{ span: 18 }}
+                                lg={{ span: 18}}
+                                md={{ span: 18 }}
+                                sm={{ span: 24}}
+                                xs={{ span: 24}}
+                            >
+                                <div className={styles.Body}>
+                                    <div className={styles.Header}>
+                                        <h3> N2N MISSIONS </h3>
+                                        <div className={styles.titleLine}>
+                                            <hr />
+                                        </div>
+                                        <p>
+                                            We take the gospel to the unreached and the unengaged people groups through planting 
+                                            of churches where there is none and holistic mission. It is estimated 
+                                            that over of the 7.2 billion people alive in the world today, 
+                                            3.0 billion of them live in unreached people groups with little or no access to the 
+                                            Gospel of Jesus Christ.
+                                            Over 51 million souls are still beyond the reach of the Gospel which means that no church, 
+                                            no missionary, no mission agency, no one has yet taken the responsibility to preach Jesus Christ.
+                                            We demonstrate God's love by alleviating need and suffering of the poorest of the poor.
+                                            Reaching them with the gospel only would make our impact incomplete. We are always armed
+                                            with the gospel in one hand and with the provision of clothing, food, medical care and 
+                                            other basic necessities of life in the other hand.
+                                        </p>
                                     </div>
-                                    <p>
-                                        We take the gospel to the unreached and the unengaged people groups through planting 
-                                        of churches where there is none and holistic mission. It is estimated 
-                                        that over of the 7.2 billion people alive in the world today, 
-                                        3.0 billion of them live in unreached people groups with little or no access to the 
-                                        Gospel of Jesus Christ.
-                                        Over 51 million souls are still beyond the reach of the Gospel which means that no church, 
-                                        no missionary, no mission agency, no one has yet taken the responsibility to preach Jesus Christ.
-                                        We demonstrate God's love by alleviating need and suffering of the poorest of the poor.
-                                        Reaching them with the gospel only would make our impact incomplete. We are always armed
-                                        with the gospel in one hand and with the provision of clothing, food, medical care and 
-                                        other basic necessities of life in the other hand.
-                                    </p>
                                 </div>
-                            </div>
+                            </Col>
+                            <Col xl={{ span: 3}} lg={{ span: 3}} md={{ span: 3 }} sm={{ span: 24}} xs={{ span: 24}}/>
+                            </Row>
                         </div>
                     </Col>
                 </Row>
