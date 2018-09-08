@@ -25,17 +25,18 @@ class HomeWelcome extends Component {
                             </div>
                         </div>
                         <div className={styles.Body}>
-                            <Image className={styles.Image} src={[ WelcomeImage, WelcomeImage ]} />
+                            {/* <Image className={styles.Image} src={[ WelcomeImage, WelcomeImage ]} /> */}
                             <p> 
                                 <strong> Have you captured the Vision? </strong> <br />
                                 <strong> <i> "Then the Lord... Said, write the vision, and make it plain on tablets, 
                                 that he may run who reads it." </i> </strong> <strong> (Habakkuk 2: 2 NKJV) </strong>
-                                The last command of Jesus Christ was for His disciples to go into the world and make disciples all nations. 
-                                He also gives us the privilege and honour to join the greatest movement.
+                                The last command of Jesus Christ was for His disciples to go into the 
+                                world and make disciples all nations. He also gives us the privilege and honour 
+                                to join the greatest movement in the earth, sharing the greatest news of the greatest 
+                                soon - coming world - ruling, supernatural government of the greatest man <strong> (Jesus Christ) </strong>
+                                that has ever lived in the earth. 
                             </p>
-                            <p>
-                                Sharing the greatest news of the greatest soon - coming world - ruling, supernatural 
-                                government of the greatest man - Jesus Christ that ever lived in the earth. 
+                            <p> 
                                 Jesus Christ is coming back to govern this physical world. His is coming to rule the nations of the world. 
                                 This is that one government that will bring unprecedented world peace, unity, love, health, 
                                 economic stability, eternal security and prosperity. 
@@ -62,22 +63,25 @@ class HomeWelcome extends Component {
                                 Do this and I am confident that you will fulfil your eternal purpose with joy unspeakable. 
                                 Thank you for taking time to visit our website. And I believe that you will have a fulfilling time 
                                 going through our lines. 
-                                But if you have not believed that Jesus Christ died on the cross to save you and that God raised 
-                                Him from the death for you to live till eternity...
                             </p>
                             <p>
-                                I trust that you want to be a citizen of God's kingdom. 
-                                But If you are not yet born again, 
-                                we invite you to make Jesus Christ the Lord of your life by saying these words of prayer:
+                                <strong> Prayer of salvation </strong> <br />
+                                I trust that you want to be a citizen of God's kingdom.
+                                But If you are not yet born again, we invite you to make Jesus 
+                                Christ the Lord of your life by saying these words of prayer
+                            </p>
+                            <p> <strong>
                                 “Oh Lord God, I come to you in the name of Jesus Christ. 
-                                Your word says, “…that whosoever shall call upon the name of the Lord shall be saved”. 
+                                Your word says, <i>  “…that whosoever shall call upon the name of the Lord shall be saved”. </i>
                                 I believe in Jesus Christ, the Son of the living God. 
                                 I believe Jesus died for me and that he was buried and raised from the dead. 
                                 Right now, I confess with my mouth that Jesus Christ is Lord of my life. 
-                                I receive by faith eternal life into my spirit. 
-                                Thank you lord for saving my soul. I now have Christ dwelling in me. 
-                                I am saved, I am born again. Halleluyah!
-                                Congratulations! You are now a child of God. Welcome to this great family!! 
+                                I receive by faith eternal life into my spirit. Thank you lord for saving my soul. 
+                                I now have Christ dwelling in me. I am saved, I am born again. Halleluyah! 
+                                </strong>
+                            </p> 
+                            <p>
+                                Congratulations! You are now a child of God. Welcome to this great family!! <br />
                                 To receive more information on how you can grow as a Christian, kindly tap below to send us an email.
                             </p>
                             <Button href="mailto:info@missionn2n.com" type="primary" size="large"> I want to Receive more information </Button>

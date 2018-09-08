@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'antd';
+import { Row, Col, Button, Modal } from 'antd';
 import { useShallowEqual } from 'shouldcomponentupdate-children';
 import { connect } from 'react-redux';
-import { prayerRequest, clearPrayerRequestForm } from '../../../actions';
+import { prayerRequest, clearPrayerRequestForm, toggleModalPrayerRequest, toggleModalMember, memberRequest } from '../../../actions';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import PrayerRequestForm from '../../../components/PrayerRequestForm/PrayerRequestForm';
+import PrayerMembership from '../../../components/PrayerMembership/PrayerMembership';
 import Footer from '../../Footer/Footer';
 import styles from './N2nPrayer.module.scss';
 
@@ -50,17 +52,11 @@ class N2nPrayer extends Component {
                                             sm={{ span: 24 }}
                                             xs={{ span: 24}}>
                                             <p>
-                                            {/* This is the time for great intercession.
-                                            We must go on our Knees for all nations.
-                                            The only way to get the world ready for the second coming of
-                                            Christ is through intercession.
-                                            Fervent faith-filled intercession is the spiritual climate of every movement.
-                                            We gather in different locations to intercede for nations, communities, leaders,
-                                            youth, families, churches and ministries. */}
                                             God's urgent concern is for the Church to complete the task of evangelism. 
                                             The return of our Lord Jesus Christ will be delayed until every tribe, language, 
-                                            and nation has heard the good news of the Kingdom of God. God does not want to lose any of anyone. 
-                                            And God to this vision, he has called us to partnership. 
+                                            and nation has heard the good news of the Kingdom of God. 
+                                            God does not want to lose any of his child
+                                            And for God to accomplish his vision, he has called us into partnership. 
                                             Preparation must go ahead of evangelism. 
                                             There is no genuine harvest of souls without fervent intercession. 
                                             Prayer must saturate the work of reaching the nations for Christ. 
@@ -89,7 +85,43 @@ class N2nPrayer extends Component {
                                         </Col>
                                         <Col span={3}/>
                                     </Row>
-                                    <PrayerRequestForm message={this.props.message} sent={this.props.sent} loading={this.props.loading} prayerRequest={this.props.prayerRequest} />
+                                    <Row>
+                                        <Col span={3}/>
+                                        <Col xl={{ span: 18 }}
+                                            lg={{ span: 18 }}
+                                            md={{ span: 18 }}
+                                            sm={{ span: 24 }}
+                                            xs={{ span: 24}}>
+                                            <Button 
+                                            onClick={() => this.props.toggleModalPrayerRequest(this.props.prayerRequestForm)} className={styles.Btn} type="primary" size="large"> SEND PRAYER REQUEST </Button>
+                                            <p style={{ textAlign: 'center', fontSize: '1.8rem', margin: '1rem' }}> OR </p>
+                                            <Button 
+                                            onClick={() => this.props.toggleModalMember(this.props.membershipRequest)}
+                                            className={styles.Btn} size="large"> JOIN PRAYER NETWORK </Button>
+                                        </Col>
+                                        <Col span={3}/>
+                                    </Row>
+                                    <Modal
+                                    onOk={() => this.props.toggleModalPrayerRequest(this.props.prayerRequestForm)}
+                                    onCancel={() => this.props.toggleModalPrayerRequest(this.props.prayerRequestForm)}
+                                     visible={this.props.prayerRequestForm} > 
+                                        <PrayerRequestForm 
+                                        message={this.props.message} 
+                                        sent={this.props.sent} 
+                                        loading={this.props.loading} 
+                                        prayerRequest={this.props.prayerRequest} />
+                                    </Modal>
+                                    <Modal 
+                                    onOk={() => this.props.toggleModalMember(this.props.membershipRequest)}
+                                    onCancel={() => this.props.toggleModalMember(this.props.membershipRequest)}
+                                    visible={this.props.membershipRequest}> 
+                                        <PrayerMembership 
+                                        message={this.props.memberMessage} 
+                                        sent={this.props.memberSent} 
+                                        loading={this.props.memberLoading} 
+                                        prayerRequest={this.props.memberRequest}
+                                        />
+                                    </Modal>
                                 </div>
                             </div>
                         </div>
@@ -100,13 +132,22 @@ class N2nPrayer extends Component {
         )
     }
 }
-
 const mapStateToProps = state => {
     return {
         message: state.PrayerNetworkReducer.message,
+        memberMessage: state.PrayerNetworkReducer.memberMessage,
         loading: state.PrayerNetworkReducer.loading,
+        memberLoading: state.PrayerNetworkReducer.memberLoading,
         sent: state.PrayerNetworkReducer.sent,
+        memberSent: state.PrayerNetworkReducer.memberSent,
+        prayerRequestForm: state.PrayerNetworkReducer.prayerRequest,
+        membershipRequest: state.PrayerNetworkReducer.membershipRequest,
     }
 }
 
-export default connect(mapStateToProps, { prayerRequest, clearPrayerRequestForm })(useShallowEqual(N2nPrayer));
+export default connect(mapStateToProps, 
+    { prayerRequest, 
+        toggleModalPrayerRequest,
+        toggleModalMember,
+        memberRequest,
+        clearPrayerRequestForm })(useShallowEqual(N2nPrayer));

@@ -16,20 +16,23 @@
             flex-direction: column;
             text-align: center;
             background-image:
+                -moz-linear-gradient(to right bottom,
+                rgba(#000, 0.3),
+                rgba(#000, 0.3)),
                 url('../../../assets/prayer-network.jpeg');
-            // background-image: -webkit-linear-gradient(to right bottom,
-            //         rgba(#ff00cc, 0.6),
-            //         rgba(#008686, 0.6)),
-            //         url('../../../assets/prayer-network.jpeg');
-            // background-image: -o-linear-gradient(to right bottom,
-            //         rgba(#ff00cc, 0.6),
-            //         rgba(#008686, 0.6)),
-            //         url('../../../assets/prayer-network.jpeg');
-            // background-image: linear-gradient(
-            //     to right bottom,
-            //     rgba(#ff00cc, 0.6),
-            //     rgba(#008686, 0.6)),
-            //     url('../../../assets/prayer-network.jpeg');
+            background-image: -webkit-linear-gradient(to right bottom,
+                    rgba(#000, 0.3),
+                    rgba(#000, 0.3)),
+                    url('../../../assets/prayer-network.jpeg');
+            background-image: -o-linear-gradient(to right bottom,
+                    rgba(#000, 0.3),
+                    rgba(#000, 0.3)),
+                    url('../../../assets/prayer-network.jpeg');
+            background-image: linear-gradient(
+                to right bottom,
+                rgba(#000, 0.3),
+                rgba(#000, 0.3)),
+                url('../../../assets/prayer-network.jpeg');
             background-size: cover;
             background-position: top;
             position: relative;
@@ -131,6 +134,12 @@
                 font-weight: 100;
                 padding: 0 2rem;
                 text-align: left;
+            }
+
+            .Btn {
+                display: block;
+                margin: auto;
+                border-radius: 2rem;
             }
         }
 

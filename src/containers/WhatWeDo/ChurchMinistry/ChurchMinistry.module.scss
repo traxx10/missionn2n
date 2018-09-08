@@ -16,20 +16,23 @@
             flex-direction: column;
             text-align: center;
             background-image: 
-                url('../../../assets/church-ministry.jpg');
-            // background-image: -webkit-linear-gradient(to right bottom,
-            //         rgba(#ff00cc, 0.6),
-            //         rgba(#008686, 0.6)),
-            //         url('../../../assets/church-ministry.jpg');
-            // background-image: -o-linear-gradient(to right bottom,
-            //         rgba(#ff00cc, 0.6),
-            //         rgba(#008686, 0.6)),
-            //         url('../../../assets/church-ministry.jpg');
-            // background-image: linear-gradient(
-            //     to right bottom,
-            //     rgba(#ff00cc, 0.6),
-            //     rgba(#008686, 0.6)),
-            //     url('../../../assets/church-ministry.jpg');
+                -moz-linear-gradient(to right bottom,
+                         rgba(#000, 0.3),
+                         rgba(#000, 0.3))
+                url('../../../assets/church_ministry.jpg');
+            background-image: -webkit-linear-gradient(to right bottom,
+                    rgba(#000, 0.3),
+                    rgba(#000, 0.3)),
+                    url('../../../assets/church_ministry.jpg');
+            background-image: -o-linear-gradient(to right bottom,
+                    rgba(#000, 0.3),
+                    rgba(#000, 0.3)),
+                    url('../../../assets/church_ministry.jpg');
+            background-image: linear-gradient(
+                to right bottom,
+                rgba(#000, 0.3),
+                rgba(#000, 0.3)),
+                url('../../../assets/church_ministry.jpg');
             background-size: cover;
             background-position: top;
             position: relative;

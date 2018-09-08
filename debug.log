@@ -10,3 +10,6 @@
 [0906/114521.297:ERROR:file_io_win.cc(161)] CreateFile C:\Users\traxx\AppData\Local\Google\Chrome\User Data\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
 [0906/114521.302:ERROR:file_io_win.cc(170)] CreateFile C:\Users\traxx\AppData\Local\Google\Chrome\User Data\Crashpad\reports\559bd837-67cf-43a8-a669-7fc917b24b5b.dmp: The system cannot find the path specified. (0x3)
 [0906/114521.302:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0908/192800.699:ERROR:process_reader_win.cc(242)] ReadMemory at 0xfef0b4d040 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0908/192800.705:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0908/192800.709:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\traxx\AppData\Local\Google\Chrome\User Data\Crashpad\reports\7141a001-0b6e-4053-9a8d-0aa0f3856449.dmp: The process cannot access the file because it is being used by another process. (0x20)
