@@ -154,14 +154,14 @@ class WhoWeAre extends Component {
 
                                     <p>
                                         Our goal is to bring men into their inheritance. Our inheritance is first God and
-                                        then the people. God advised Jesus to ask for the nations as his inheritance and the uttermost
+                                        then the people. God adviced Jesus to ask for the nations as his inheritance and the uttermost
                                         part of the earth as His possession <strong> Psalm 2:8. </strong>
-                                        The Lord Jesus advises us to ask for the same thing.
+                                        The Lord Jesus advices us to ask for the same thing.
                                         <br />
                                         It is not at all the Lord's will that we carried forever on eagle's wings. We are to grow to the
                                         stature of the fullness of Christ. God wants sons who can represent Him throughout generations
                                         just as the Lord Jesus and his first disciples represented Him. He is not looking forward to an eternity
-                                        with babes in Christ who are still fed with milk but spiritually matured sons for the fulfilling 
+                                        with babes in Christ who are still fed with milk but spiritually mature sons for the fulfilling 
                                         of the numerous roles and tasks of the Kingdom.
                                     </p>
                                 </div>

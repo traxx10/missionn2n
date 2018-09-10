@@ -16,25 +16,25 @@
             flex-direction: column;
             text-align: center;
             background-image: 
-                // -moz-linear-gradient(to right bottom,
-                // rgba(#ff00cc, 0.4),
-                // rgba(#333399, 0.4)),
+                -moz-linear-gradient(to right bottom,
+                rgba(#000, 0.4),
+                rgba(#000, 0.4)),
                 url('../../assets/who-we-are.jpg');
             background-image: 
-                    // -webkit-linear-gradient(to right bottom,
-                    // rgba(#ff00cc, 0.4),
-                    // rgba(#333399, 0.4)),
+                    -webkit-linear-gradient(to right bottom,
+                    rgba(#000, 0.4),
+                    rgba(#000, 0.4)),
                     url('../../assets/who-we-are.jpg');
             background-image: 
-                    // -o-linear-gradient(to right bottom,
-                    // rgba(#ff00cc, 0.4),
-                    // rgba(#333399, 0.4)),
+                    -o-linear-gradient(to right bottom,
+                    rgba(#000, 0.4),
+                    rgba(#000, 0.4)),
                     url('../../assets/who-we-are.jpg');
             background-image: 
-                // linear-gradient(
-                // to right bottom,
-                // rgba(#ff00cc, 0.4),
-                // rgba(#333399, 0.4)),
+                linear-gradient(
+                to right bottom,
+                rgba(#000, 0.4),
+                rgba(#000, 0.4)),
                 url('../../assets/who-we-are.jpg');
             background-size: cover;
             background-position: top;
@@ -109,6 +109,13 @@
             margin-bottom: 2rem;
          }
 
+         p {
+            font-size: 1.8rem;
+            font-weight: 100;
+            padding: 0 2rem;
+            text-align: left;
+        }
+
         .Row {
             margin-bottom: 5rem;
 
@@ -139,13 +146,6 @@
                     top: -3px;
                     margin-left: -4.9rem;
                 }
-            }
-
-            p {
-                font-size: 1.8rem;
-                font-weight: 100;
-                padding: 0 2rem;
-                text-align: left;
             }
         }
 
@@ -179,13 +179,6 @@
                     margin-left: -4.9rem;
                 }
             }
-
-            p {
-                font-size: 1.8rem;
-                font-weight: 100;
-                padding: 0 2rem;
-                text-align: left;
-            }
         }
 
         .Vision {
@@ -217,13 +210,6 @@
                     top: -3px;
                     margin-left: -4.9rem;
                 }
-            }
-
-            p {
-                font-size: 1.8rem;
-                font-weight: 100;
-                padding: 0 2rem;
-                text-align: left;
             }
         }
 
@@ -257,13 +243,6 @@
                     top: -3px;
                     margin-left: -4.9rem;
                 }
-            }
-
-            p {
-                font-size: 2rem;
-                font-weight: 100;
-                padding: 0 2rem;
-                text-align: left;
             }
 
             ul, li {
@@ -317,13 +296,6 @@
                 }
             }
 
-            p {
-                font-size: 1.8rem;
-                font-weight: 100;
-                padding: 0 2rem;
-                text-align: left;
-            }
-
             .Image {
                 max-height: 20rem;
                 border-radius: 2rem;
@@ -364,6 +336,103 @@
     100% {
         opacity: 1;
         transform: translateX(0)
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .WhoWeAre {
+        .ImageContainer {
+            
+            .Text {
+                background-image: 
+                    -moz-linear-gradient(to right bottom,
+                    rgba(#000, 0.4),
+                    rgba(#000, 0.4)),
+                    url('../../assets/who-we-are-small.jpg');
+                background-image: 
+                        -webkit-linear-gradient(to right bottom,
+                        rgba(#000, 0.4),
+                        rgba(#000, 0.4)),
+                        url('../../assets/who-we-are-small.jpg');
+                background-image: 
+                        -o-linear-gradient(to right bottom,
+                        rgba(#000, 0.4),
+                        rgba(#000, 0.4)),
+                        url('../../assets/who-we-are-small.jpg');
+                background-image: 
+                    linear-gradient(
+                    to right bottom,
+                    rgba(#000, 0.4),
+                    rgba(#000, 0.4)),
+                    url('../../assets/who-we-are-small.jpg');
+    
+                .Header {
+    
+                    h1 {
+                        font-size: 3.5rem;
+                        line-height: 4rem;
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        color: #fff;
+                        text-align: center;
+                        animation: who 1s ease-in forwards;
+                    }
+            
+                    .titleLine {
+                        width: 25.6rem;
+                        height: 1px;
+                        background: #eee;
+                        margin: 1.8rem auto 3.8rem;
+                        clear: both;
+                        position: relative;
+                        animation: titleLine 1s ease-in forwards;
+            
+                        hr {
+                            width: 9.9rem;
+                            height: .7rem;
+                            background: #ff00cc;
+                            border: 0;
+                            outline: none;
+                            margin: 0 auto;
+                            position: absolute;
+                            left: 50%;
+                            top: -3px;
+                            margin-left: -4.9rem;
+                        }
+                    }
+                }
+    
+                .TextContainer {
+                    margin-bottom: 3rem;
+    
+                    h3, h2, h1 {
+                        color: #fff;
+                        font-weight: 300;
+                        margin: 0 1.8rem;
+                    }
+    
+                    h1 {
+                        font-size: 10rem;
+                        letter-spacing: .8rem;
+                    }
+    
+                    h3 {
+                        font-size: 2rem;
+                        letter-spacing: 1rem;
+                    }
+                }
+            }
+        }
+        .Body {
+            .Header {
+                font-size: 2.5rem;
+                padding: 0;
+            }
+            
+            p {
+                padding: 0;
+            }
+        }
     }
 }
 

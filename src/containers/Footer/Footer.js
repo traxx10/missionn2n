@@ -25,6 +25,7 @@ class Footers extends Component {
                         <div className={styles.QuickLinks}>
                             <h3> QUICK LINKS </h3>
                             <br />
+                            <Link className={styles.Link} to="/prayer-of-salvation"> PRAYER OF SALVATION </Link>
                             <Link className={styles.Link} to="/contact-us"> CONTACT US </Link>
                             <Link className={styles.Link} to="/what-we-do"> WHAT WE DO </Link>
                             <Link className={styles.Link} to="/events"> EVENTS </Link>

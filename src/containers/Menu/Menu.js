@@ -76,6 +76,11 @@ class Menus extends Component {
                                 GET INVOLVED
                             </NavLink>
                         </MenuItem>
+                        {/* <MenuItem className={styles.MenuItem}>
+                            <NavLink className={styles.NavLink} activeClassName={styles.ActiveLink} to="/prayer-of-salvation">
+                                PRAYER OF SALVATION
+                            </NavLink>
+                        </MenuItem> */}
                     </Menu>
                 </Col>
             </Row>

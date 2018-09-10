@@ -1,4 +1,7 @@
-.GetInvolved {
+.PrayerOfSalvation {
+    background-color: #fff;
+    overflow: hidden;
+
     .ImageContainer {
         height: 95vh;  
         position: relative;
@@ -15,21 +18,21 @@
             background-image: 
                 -moz-linear-gradient(to right bottom,
                 rgba(#000, 0.3),
-                rgba(#000, 0.3))
-                url('../../assets/cross.jpeg');
+                rgba(#000, 0.3)),
+                url('../../assets/prayer_of_salvation.jpg');
             background-image: -webkit-linear-gradient(to right bottom,
                     rgba(#000, 0.3),
                     rgba(#000, 0.3)),
-                    url('../../assets/cross.jpeg');
+                    url('../../assets/prayer_of_salvation.jpg');
             background-image: -o-linear-gradient(to right bottom,
                     rgba(#000, 0.3),
                     rgba(#000, 0.3)),
-                    url('../../assets/cross.jpeg');
+                    url('../../assets/prayer_of_salvation.jpg');
             background-image: linear-gradient(
                 to right bottom,
                 rgba(#000, 0.3),
                 rgba(#000, 0.3)),
-                url('../../assets/cross.jpeg');
+                url('../../assets/prayer_of_salvation.jpg');
             background-size: cover;
             background-position: top;
             position: relative;
@@ -44,7 +47,7 @@
                     font-weight: 300;
                     color: #fff;
                     text-align: center;
-                    animation: get 1s ease-in forwards;
+                    animation: mission 1s ease-in forwards;
                 }
         
                 .titleLine {
@@ -93,7 +96,7 @@
         }
     }
 
-    .Involved {
+    .Body {
         margin-bottom: 3rem;
 
         .Header {
@@ -127,26 +130,40 @@
             }
 
             p {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
+                line-height: 2.7rem;
                 font-weight: 100;
-                padding: 0 2rem;
-                text-align: center;
+                text-align: left;
+                margin: 0 2rem;
+                margin-bottom: 5rem;
+
+                strong {
+                    font-weight: bold;
+                }
+            }
+    
+            .Button {
+                margin:  0 2rem;
+                height: 4rem;
+                transition: all .3s ease-in-out;
+    
+                &:hover {
+                    transform: translateY(-1rem);
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+                }
+    
+                .Link {
+                    text-align: center;
+                    font-size: 2rem;
+                    padding: 1rem;
+                }
             }
         }
     }
 }
 
-.Loading {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff; 
-}
-
 @media screen and (max-width: 800px) {
-    .GetInvolved {
+    .N2nMissions {
         .ImageContainer {
             .Text {
                 .TextContainer {
@@ -156,11 +173,12 @@
                 }
             }
         }
+
     }
 }
 
 @media screen and (max-width: 600px) {
-    .GetInvolved {
+    .N2nMissions {
         .ImageContainer {
             .Text {
                 .TextContainer {
@@ -170,10 +188,18 @@
                 }
             }
         }
+
+        .Body {
+            .Header {
+                p {
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
-@keyframes get {
+@keyframes mission {
     0% {
         opacity: 0;
         transform: translateX(-10rem);

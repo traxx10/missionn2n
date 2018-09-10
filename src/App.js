@@ -6,6 +6,7 @@ import TopHeader from './containers/TopHeader/TopHeader';
 import firebase from 'firebase';
 import Home from './containers/Home/Home';
 import Events from './containers/Events/Events';
+import PrayerOfSalvation from './containers/PrayerOfSalvation/PrayerOfSalvation';
 import WhoWeAre from './containers/WhoWeAre/WhoWeAre';
 import GetInvolved from './containers/GetInvolved/GetInvolved';
 import N2nMissions from './containers/WhatWeDo/N2nMissions/N2nMissions';
@@ -104,6 +105,7 @@ class App extends Component {
                       <Route path="/n2n-prayer-network" exact component={N2nPrayer} />
                       <Route path="/every-child-count" exact component={EveryChildCount} />
                       <Route path="/church-planting" exact component={ChurchPlanting} />
+                      <Route path="/prayer-of-salvation" exact component={PrayerOfSalvation} />
                       <Route path="/contact-us" exact component={ContactUs} />
                       <Route path="/events/:id" exact component={EventDetail} />
                     </Switch>
