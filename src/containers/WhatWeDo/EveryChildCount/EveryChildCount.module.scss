@@ -16,20 +16,23 @@
             flex-direction: column;
             text-align: center;
             background-image: 
+                -moz-linear-gradient(to right bottom,
+                rgba(#000, 0.3),
+                rgba(#000, 0.3))
                 url('../../../assets/every_child_count.jpeg');
-            // background-image: -webkit-linear-gradient(to right bottom,
-            //         rgba(#ff00cc, 0.6),
-            //         rgba(#008686, 0.6)),
-            //         url('../../../assets/every_child_count.jpeg');
-            // background-image: -o-linear-gradient(to right bottom,
-            //         rgba(#ff00cc, 0.6),
-            //         rgba(#008686, 0.6)),
-            //         url('../../../assets/every_child_count.jpeg');
-            // background-image: linear-gradient(
-            //     to right bottom,
-            //     rgba(#ff00cc, 0.6),
-            //     rgba(#008686, 0.6)),
-            //     url('../../../assets/every_child_count.jpeg');
+            background-image: -webkit-linear-gradient(to right bottom,
+                    rgba(#000, 0.6),
+                    rgba(#000, 0.6)),
+                    url('../../../assets/every_child_count.jpeg');
+            background-image: -o-linear-gradient(to right bottom,
+                    rgba(#000, 0.6),
+                    rgba(#000, 0.6)),
+                    url('../../../assets/every_child_count.jpeg');
+            background-image: linear-gradient(
+                to right bottom,
+                rgba(#000, 0.6),
+                rgba(#000, 0.6)),
+                url('../../../assets/every_child_count.jpeg');
             background-size: cover;
             background-position: top;
             position: relative;
@@ -94,7 +97,7 @@
     }
 
     .Body {
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
 
         .Header {
             h3 {
@@ -133,7 +136,17 @@
                 text-align: center;
             }
         }
+
+        .Card {
+            
+
+            .Image {
+                width: auto;
+                height: 100%;
+            }
+        }
     }
+
 }
 
 @media screen and (max-width: 800px) {

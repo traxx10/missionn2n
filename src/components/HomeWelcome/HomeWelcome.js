@@ -31,7 +31,7 @@ class HomeWelcome extends Component {
                                 <strong> <i> "Then the Lord... Said, write the vision, and make it plain on tablets, 
                                 that he may run who reads it." </i> </strong> <strong> (Habakkuk 2: 2 NKJV) </strong>
                                 The last command of Jesus Christ was for His disciples to go into the 
-                                world and make disciples all nations. He also gives us the privilege and honour 
+                                world and make disciples of all nations. He also gives us the privilege and honour 
                                 to join the greatest movement on earth, sharing the greatest news of the greatest 
                                 soon - coming world - ruling, supernatural government of the greatest man <strong> (Jesus Christ) </strong>
                                 that has ever lived on the earth. 
@@ -53,15 +53,15 @@ class HomeWelcome extends Component {
                                 It is participating in a literal government in which true Christians, those who overcame self, 
                                 the world and Satan in this present earth. 
                                 It is finally spending eternity with Christ in the new earth and heaven. 
-                                God is working, And I am glad to announce to that you have a wonderful role to play to see that God's vision, 
+                                God is working, And we are glad to announce to you that you have a wonderful role to play to see that God's vision, 
                                 His kingdom is advanced as we prepare for Christ's second coming. This is the reason you are still alive today. 
                                 Isn't that so exciting? Living your real life with Christ in a perfect world! 
-                                For me, it is everything! With this in mind, your vision, hope and future should be beyond this world. 
+                                For us, it is everything! With this in mind, your vision, hope and future should be beyond this world. 
                                 To live above the noise and troubles of this world is to invest your time, 
                                 talents and treasure into eternity through partnership with God in kingdom advancement. 
                                 Playing your role is the reason you were born. Will you play your role?
-                                Do this and I am confident that you will fulfil your eternal purpose with joy unspeakable. 
-                                Thank you for taking time to visit our website. And I believe that you will have a fulfilling time 
+                                Do this and we are confident that you will fulfil your eternal purpose with joy unspeakable. 
+                                Thank you for finding out time to visit our website. And we believe that you will have a fulfilling time 
                                 going through our lines. 
                             </p>
                             <Button className={styles.Button}>

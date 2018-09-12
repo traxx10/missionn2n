@@ -17,3 +17,5 @@ export const TOGGLE_MODAL_MEMBER = 'toggle_modal_member';
 export const REQUEST_MEMBER = 'request_member';
 export const REQUEST_MEMBER_SUCCESS = 'request_member_success';
 export const REQUEST_MEMBER_FAILED = 'request_member_failed';
+export const FETCH_EVERY_CHILD_GALLERY = 'fetch_every_child_gallery';
+export const FETCH_EVERY_CHILD_GALLERY_SUCCESS = 'fetch_every_child_gallery_success';

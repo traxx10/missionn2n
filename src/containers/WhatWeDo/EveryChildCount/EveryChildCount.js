@@ -1,11 +1,47 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'antd';
+import { Row, Col, Card } from 'antd';
 import { useShallowEqual } from 'shouldcomponentupdate-children';
+import { connect } from 'react-redux';
+import { everyChildGallery } from '../../../actions';
+import _ from 'lodash';
+import Image from 'react-image';
 import Footer from '../../Footer/Footer';
 import styles from './EveryChildCount.module.scss';
 
 class EveryChildCount extends Component {
+    componentWillMount() {
+        this.props.everyChildGallery();
+    }
+
+    renderGallery() {
+        const mapGallery=  this.props.gallery.map(gallery => {
+            return (
+                <Col 
+                key={gallery.uid}
+                xs={{ span: 24}}
+                sm={{ span: 24 }}
+                md={{ span: 8 }}
+                lg={{ span: 6 }}
+                xl={{ span: 6 }}>
+                    <Card
+                        hoverable
+                        style={{ width: 240, margin: 'auto', marginBottom: '4rem' }}
+                        cover={<Image style={{ }} alt="example" src={[ gallery.url ]}/>}
+                    >
+                    <Card.Meta
+                        title={gallery.title}
+                        description={gallery.title}
+                    />
+                    </Card>
+                </Col>
+            )
+        })
+
+        return mapGallery;
+    }
+
     render() {
+        console.log(this.props.gallery)
         return (
             <div>
                 <Row>
@@ -19,10 +55,6 @@ class EveryChildCount extends Component {
                                             <hr />
                                         </div>
                                     </div>
-                                    {/* <div className={styles.TextContainer}>
-                                        <h1> ONE MINISTRY </h1>
-                                        <h3> PRAY, GO AND GIVE! </h3>
-                                    </div> */}
                                 </div>
                             </div>
                             <div className={styles.Body}>
@@ -44,6 +76,17 @@ class EveryChildCount extends Component {
                                     </p>
                                 </div>
                             </div>
+                            <div className={styles.Body}>
+                                <div className={styles.Header}>
+                                    <h3> GALLERY </h3>
+                                    <div style={{ marginBottom: '2rem'}} className={styles.titleLine}>
+                                        <hr />
+                                    </div>
+                                    <Row gutter={24}>
+                                        {this.renderGallery()}
+                                    </Row>
+                                </div>
+                            </div>
                         </div>
                     </Col>
                 </Row>
@@ -53,4 +96,14 @@ class EveryChildCount extends Component {
     }
 }
 
-export default useShallowEqual(EveryChildCount);
+const mapStateToProps = state => {
+    const gallery = _.map(state.EveryChildCountReducer.gallery, (val, uid) => {
+        return { ...val, uid }
+    })
+
+    return {
+
+        gallery
+    }
+}
+export default connect(mapStateToProps, { everyChildGallery })(useShallowEqual(EveryChildCount));
