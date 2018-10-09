@@ -43,16 +43,18 @@ class Footers extends Component {
                             <h4> ABUJA </h4>
                             <h5> 
                                 10 Lingu crescent, off Aminu Kano Crescent,
-                                Wuse 11
+                                Wuse 11 <br />
+                                +234-80-370-255-70
                             </h5>
 
                             <h4> AWKA </h4>
                             <h5> 
-                                Emmaus House
+                                Emmaus House <br />
+                                +234-81-776-690-73
                             </h5>
 
                             <h4> SWITZERLAND </h4>
-                            <h5> Zurich </h5>
+                            <h5> Zurich <br /> +41-764-534-622 </h5>
                         </div>
                     </Col>
                     <Col 

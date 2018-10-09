@@ -41,7 +41,6 @@ class EveryChildCount extends Component {
     }
 
     render() {
-        console.log(this.props.gallery)
         return (
             <div>
                 <Row>
